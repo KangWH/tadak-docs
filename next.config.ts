@@ -6,7 +6,6 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: '/tadak-docs',
-  assetPrefix: '/tadak-docs',
 };
 
 export default nextConfig;
