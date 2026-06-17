@@ -2,4 +2,4 @@
 2:I[95028,["/tadak-docs/_next/static/chunks/0oqchq2pr2yvj.js","/tadak-docs/_next/static/chunks/0l3u9zct0e6qk.js"],"default"]
 3:I[2680,["/tadak-docs/_next/static/chunks/0oqchq2pr2yvj.js","/tadak-docs/_next/static/chunks/0l3u9zct0e6qk.js"],"default"]
 4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"0V8L0gbpcZDB06Hs_lx1g"}
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"i1Qpkrr3USclG6VVStXoj"}
