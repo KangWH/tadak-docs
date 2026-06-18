@@ -1,7 +1,7 @@
 export default function PrivacyNotice() {
   return (
     <>
-      <h2>개인정보처리방침</h2>
+      <h2>개인정보 처리 방침</h2>
       <p><strong>타닥</strong>(이하 “본 앱”)은 사용자의 개인정보를 중요하게 여기며, 개인정보보호법 등 관련 법령을 준수하고 있습니다. 본 개인정보 처리방침은 본 앱이 사용자의 개인정보를 어떻게 취급하는지 안내하기 위해 작성되었습니다.</p>
       <ol className="pl-8 my-2 space-y-4 list-decimal">
         <li>
