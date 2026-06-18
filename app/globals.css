@@ -24,3 +24,19 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold text-gray-900;
+  }
+  h2 {
+    @apply text-2xl font-semibold text-gray-800 mt-6 mb-4 pb-2;
+  }
+  h3 {
+    @apply text-xl font-semibold text-gray-700 mt-6 mb-3;
+  }
+}
