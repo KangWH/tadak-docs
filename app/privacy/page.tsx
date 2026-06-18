@@ -47,7 +47,7 @@ export default function PrivacyNotice() {
           <p>본 앱의 개인정보 보호 정책에 대해 질문이 있거나 의견이 있으신 경우 아래의 연락처로 문의해 주시기 바랍니다.</p>
           <ul className="pl-8 my-2 list-disc">
             <li>개발자: 강우현</li>
-            <li>이메일: <a href="mailto:kangwh.2003@gmail.com" className="underline text-blue-600 dark:text-blue-400">kangwh.2003@gmail.com</a></li>
+            <li>이메일: <a href="mailto:kangwh.2003@gmail.com">kangwh.2003@gmail.com</a></li>
           </ul>
         </li>
       </ol>

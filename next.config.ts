@@ -1,11 +1,13 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
   },
-  basePath: '/tadak-docs',
+  basePath: isProd ? '/tadak-docs' : '',
 };
 
 export default nextConfig;
