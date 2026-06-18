@@ -12,7 +12,7 @@ export default function Home({ children }: { children: React.ReactNode }) {
         </div>
       </header>
       <main className="flex-1">
-        <div className="max-w-200 mx-auto leading-7 px-4">
+        <div className="max-w-200 mx-auto leading-7 px-4 pb-20">
           {children}
         </div>
       </main>
