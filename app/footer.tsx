@@ -8,6 +8,7 @@ export default function Footer() {
           <strong>타닥</strong>
           <Link href="/terms">이용 약관</Link>
           <Link href="/privacy">개인정보 처리 방침</Link>
+          <a href="https://github.com/KangWH/Tadak-Public" target="_blank">GitHub 저장소</a>
         </div>
         <p>Copyright 2026 강우현. All rights reserved.</p>
       </div>
