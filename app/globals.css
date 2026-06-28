@@ -1,6 +1,38 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Monoplex KR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monoplex KR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monoplex KR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-SemiBold.woff2")
+    format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monoplex KR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -10,7 +42,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: "Monoplex KR", ui-monospace, monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,7 +72,37 @@ body {
   h3 {
     @apply text-xl font-semibold text-gray-700 dark:text-zinc-300 mt-8 mb-3;
   }
+  h4 {
+    @apply font-semibold text-gray-700 dark:text-zinc-300 mt-6 mb-3;
+  }
+
   article a {
     @apply text-blue-600 dark:text-blue-400;
+  }
+
+  p + p {
+    @apply mt-2;
+  }
+
+  dt {
+    @apply font-semibold;
+  }
+
+  code {
+    @apply font-mono px-1 py-0.5 bg-gray-100 dark:bg-zinc-200 rounded-md;
+  }
+  pre {
+    @apply my-4 mx-4 py-2 px-4 font-mono bg-gray-100 dark:bg-zinc-200 rounded-md;
+  }
+  pre code {
+    @apply p-0 bg-transparent;
+  }
+
+  article .toc a {
+    color: inherit;
+    text-decoration: none;
+  }
+  article .toc a:hover {
+    text-decoration: underline;
   }
 }
