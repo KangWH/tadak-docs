@@ -10,7 +10,7 @@ export default function Footer() {
           <Link href="/privacy">개인정보 처리 방침</Link>
           <a href="https://github.com/KangWH/Tadak-Public" target="_blank">GitHub 저장소</a>
         </div>
-        <p>Copyright 2026 강우현. All rights reserved.</p>
+        <p>Copyright 2026 <a href="https://applemincho.com">강우현</a>. All rights reserved.</p>
       </div>
     </footer>
   )
