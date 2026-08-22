@@ -9,6 +9,7 @@ export default function Header() {
           <Link href="/docs/mac">macOS 입력기</Link>
           <Link href="/docs/iphone">iOS 입력기</Link>
           <Link href="/docs/editor">키보드 편집기</Link>
+          <Link href="/docs/develop">개발 문서</Link>
         </div>
       </div>
     </header>

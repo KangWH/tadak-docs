@@ -139,6 +139,17 @@ export default function Flowchart({ chart, emphasisNodes = [] }: FlowchartProps)
             nodeSpacing: 20,
             rankSpacing: 40,
           },
+          // 다이어그램 타입별로 각자의 `useMaxWidth`를 갖고 있어, flowchart 설정만으로는
+          // classDiagram 등 다른 타입에 적용되지 않는다. 기본값(true)이면 SVG가 컨테이너
+          // 너비에 맞춰 축소되어(overflow-x-auto가 무의미해짐) 복잡한 다이어그램의 글자가
+          // 지나치게 작아지므로, 실제 크기 그대로 그리고 가로 스크롤로 보게 한다.
+          class: { useMaxWidth: false },
+          sequence: { useMaxWidth: false },
+          state: { useMaxWidth: false },
+          er: { useMaxWidth: false },
+          gantt: { useMaxWidth: false },
+          journey: { useMaxWidth: false },
+          pie: { useMaxWidth: false },
         });
 
         const chartSource =
@@ -163,9 +174,14 @@ export default function Flowchart({ chart, emphasisNodes = [] }: FlowchartProps)
   }, [chart, emphasisKey, emphasisNodes, uniqueId, isDark]);
 
   return (
-    <div className="flex justify-center p-4 overflow-x-auto">
+    // 이 컴포넌트는 대부분 `flex items-center`인 래퍼(예: 회색 배경 박스) 안에서 쓰인다.
+    // `items-center`가 기본값인 stretch를 덮어써서, 폭 지정이 없는 flex item은
+    // 자기 콘텐츠 크기에 맞춰 커지고(shrink-to-fit) 그 위에 있는 overflow-x-auto가
+    // 무력화되어 다이어그램이 래퍼 밖으로 그대로 삐져나온다. `w-full`로 항상 부모
+    // 폭에 맞추도록 강제해 overflow-x-auto가 실제로 스크롤을 만들게 한다.
+    <div className="w-full overflow-x-auto p-4 text-center">
       {svg ? (
-        <div className="inline-block text-center" dangerouslySetInnerHTML={{ __html: svg }} />
+        <div className="inline-block" dangerouslySetInnerHTML={{ __html: svg }} />
       ) : (
         <div className="text-gray-400 dark:text-zinc-500 text-sm animate-pulse py-8">로드 중...</div>
       )}
