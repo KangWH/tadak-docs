@@ -12,12 +12,12 @@ export default function Home() {
           <a
             href="https://github.com/kangwh/tadak-public/releases"
             target="_blank"
-            className="px-4 py-2 border border-blue-600 dark:border-blue-500 rounded-md font-semibold transition-all transition-duration-500 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white active:opacity-75"
+            className="px-4 py-2 border border-blue-600 dark:border-blue-500 rounded-md font-semibold transition transition-duration-500 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white active:opacity-75"
           >macOS 버전 다운로드</a>
           <a
             href="https://apps.apple.com/us/app/%ED%83%80%EB%8B%A5-%ED%95%9C%EA%B8%80-%ED%82%A4%EB%B3%B4%EB%93%9C/id6775452099"
             target="_blank"
-            className="px-4 py-2 border border-blue-600 dark:border-blue-500 rounded-md font-semibold transition-all transition-duration-500 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white active:opacity-75"
+            className="px-4 py-2 border border-blue-600 dark:border-blue-500 rounded-md font-semibold transition transition-duration-500 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white active:opacity-75"
           >iOS 버전 다운로드</a>
         </div>
         <p className="text-center text-sm text-gray-500 dark:text-zinc-400">macOS 버전: macOS 26.0 이상 지원. Intel 칩과 Apple Silicon을 모두 지원합니다. iOS 버전: iOS/iPadOS 26.0 이상 지원.</p>

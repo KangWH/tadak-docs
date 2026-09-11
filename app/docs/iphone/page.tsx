@@ -63,20 +63,14 @@ export default function IPhonePage() {
         </a>
         와 비슷한 다양한 자판·편의 기능을 제공합니다.
       </p>
-      <p>
-        기본 자판은 <strong>두벌식</strong>이며, 세벌식·신세벌식·로마자
-        한글·모바일형 자판 등도 골라 쓸 수 있습니다.
-      </p>
-      <p>
-        Mac용 설명서는 <Link href="/docs/mac">macOS 입력기</Link>를
-        참고하세요.
-      </p>
+      <p>기본 자판은 <strong>두벌식</strong>이며, 세벌식·신세벌식·로마자 한글·모바일형 자판 등도 골라 쓸 수 있습니다.</p>
+      <p>Mac용 설명서는 <Link href="/docs/mac">macOS 입력기</Link>를 참고하세요.</p>
 
       <div className="my-6 flex flex-col items-center gap-y-2">
         <a
           href="https://apps.apple.com/us/app/%ED%83%80%EB%8B%A5-%ED%95%9C%EA%B8%80-%ED%82%A4%EB%B3%B4%EB%93%9C/id6775452099"
           target="_blank"
-          className="px-4 py-2 border border-blue-600 dark:border-blue-500 rounded-md font-semibold transition-all transition-duration-500 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white active:opacity-75"
+          className="px-4 py-2 border border-blue-600 dark:border-blue-500 rounded-md font-semibold transition transition-duration-500 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white active:opacity-75"
         >
           iOS 버전 다운로드
         </a>

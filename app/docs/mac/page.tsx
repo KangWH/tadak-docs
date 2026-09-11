@@ -57,29 +57,17 @@ export default function MacPage() {
       <h2>macOS 입력기</h2>
       <p>
         타닥은 Mac용 한글 입력기입니다. Windows용{" "}
-        <a href="http://moogi.new21.org/prg4.html" target="_blank">
-          날개셋 한글 입력기
-        </a>
+        <a href="http://moogi.new21.org/prg4.html" target="_blank">날개셋 한글 입력기</a>
         와 비슷한 다양한 자판·편의 기능을 제공합니다.
       </p>
-      <p>
-        기본 자판은 <strong>두벌식</strong>이며, 세벌식·신세벌식·로마자 한글 등도
-        추가해 쓸 수 있습니다.
-      </p>
-      <p className="text-sm text-gray-500 dark:text-zinc-400">
-        타닥은 아직 정식 배포 전 단계일 수 있습니다. 일부 동작이 바뀌거나,
-        예기치 않은 문제가 생길 수 있습니다.
-      </p>
-      <p>
-        iPhone·iPad용 설명서는{" "}
-        <Link href="/docs/iphone">iOS 키보드</Link>를 참고하세요.
-      </p>
+      <p>기본 자판은 <strong>두벌식</strong>이며, 세벌식·신세벌식·로마자 한글 등도 추가해 쓸 수 있습니다.</p>
+      <p>iPhone·iPad용 설명서는 <Link href="/docs/iphone">iOS 키보드</Link>를 참고하세요.</p>
 
       <div className="my-6 flex flex-col items-center gap-y-2">
         <a
           href="https://github.com/kangwh/tadak-public/releases"
           target="_blank"
-          className="px-4 py-2 border border-blue-600 dark:border-blue-500 rounded-md font-semibold transition-all transition-duration-500 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white active:opacity-75"
+          className="px-4 py-2 border border-blue-600 dark:border-blue-500 rounded-md font-semibold transition transition-duration-500 hover:bg-blue-600 dark:hover:bg-blue-500 hover:text-white active:opacity-75"
         >
           macOS 버전 다운로드
         </a>
@@ -93,14 +81,8 @@ export default function MacPage() {
       <h3 id="시작하기">1. 시작하기</h3>
       <h4>입력기로 켜기</h4>
       <ol className="pl-8 my-2 list-decimal space-y-1">
-        <li>
-          타닥을 설치합니다. 입력기 앱은{" "}
-          <code>/Library/Input Methods</code>에 두어야 하며, 제공된 설치 안내를
-          따르세요.
-        </li>
-        <li>
-          필요하면 Mac을 <strong>재시동</strong>합니다.
-        </li>
+        <li>타닥을 설치합니다. 입력기 앱은 <code>/Library/Input Methods</code>에 두어야 하며, 제공된 설치 안내를 따르세요.</li>
+        <li>필요하면 Mac을 <strong>재시동</strong>합니다.</li>
         <li>
           <strong>시스템 설정 → 키보드 → 입력 소스</strong>에서{" "}
           <strong>타닥</strong>(또는 「한글 입력기」)을 추가합니다.
