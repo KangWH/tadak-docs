@@ -55,7 +55,7 @@ function ManualTable({
 export default function IPhonePage() {
   return (
     <article>
-      <h2>iOS 입력기</h2>
+      <h2>iOS 키보드</h2>
       <p>
         타닥은 iPhone·iPad용 한글 키보드입니다. Windows용{" "}
         <a href="http://moogi.new21.org/prg4.html" target="_blank">
@@ -66,10 +66,6 @@ export default function IPhonePage() {
       <p>
         기본 자판은 <strong>두벌식</strong>이며, 세벌식·신세벌식·로마자
         한글·모바일형 자판 등도 골라 쓸 수 있습니다.
-      </p>
-      <p className="text-sm text-gray-500 dark:text-zinc-400">
-        타닥은 아직 정식 배포 전 단계일 수 있습니다. 일부 동작이 바뀌거나,
-        예기치 않은 문제가 생길 수 있습니다.
       </p>
       <p>
         Mac용 설명서는 <Link href="/docs/mac">macOS 입력기</Link>를
@@ -121,12 +117,6 @@ export default function IPhonePage() {
       <p>
         앱 안의 <strong>설정 방법 보기</strong>에 단계별 화면 안내가 있습니다.
       </p>
-      <p>
-        앱 아래 탭은 <strong>일반 설정</strong>, <strong>세부 설정</strong>,{" "}
-        <strong>써 보기</strong>, <strong>정보</strong>입니다. 앱을 연 뒤
-        버전이 올라갔으면 <strong>새로운 기능</strong> 안내가 나타날 수
-        있습니다.
-      </p>
 
       <h3 id="기본-사용">2. 기본 사용</h3>
       <h4>글자 입력</h4>
@@ -134,12 +124,6 @@ export default function IPhonePage() {
         키보드에서 <strong>타닥</strong>을 선택한 뒤 평소처럼 입력합니다. 앱{" "}
         <strong>일반 설정 → 키보드</strong>에서 고른 자판에 맞춰
         한글·영문·기호가 입력됩니다.
-      </p>
-      <p>
-        스페이스 바 오른쪽 아래에는 지금 쓰는 배열이 한글이면{" "}
-        <strong>한</strong>, 라틴 배열이면 <strong>A</strong>가 작게
-        표시됩니다. (숫자·전화 키패드처럼 다른 형태의 배열에서는{" "}
-        <strong>스페이스</strong> / <strong>Space</strong>로 표시됩니다.)
       </p>
 
       <h4>한글·영문·기호 전환</h4>
@@ -154,7 +138,7 @@ export default function IPhonePage() {
         ]}
       />
       <p>
-        영문·기호 입력 중에 스페이스나 Return을 누르면 한글 배열로 돌아갑니다.
+        기호 입력 중에 스페이스나 Return을 누르면 한글 배열로 돌아갑니다.
         (기본 형태의 자판일 때)
       </p>
       <p>
@@ -190,12 +174,12 @@ export default function IPhonePage() {
       </p>
       <ul className="pl-8 my-2 list-disc space-y-1">
         <li>
-          iPhone, iPad mini, iPad <strong>유동식</strong> 키보드: Shift를{" "}
+          iPhone, iPad (10.5인치 미만 모델), iPad 유동식 키보드: Shift를{" "}
           <strong>빠르게 두 번</strong> 누르면 Caps Lock이 켜집니다. 다시
           Shift를 누르면 해제됩니다.
         </li>
         <li>
-          iPad(미니가 아닌 모델)에서{" "}
+          iPad(10.5인치 이상 모델)에서{" "}
           <strong>Caps Lock 키로 로마자-한글 전환</strong>이 꺼져 있으면, Caps
           Lock 키로 대문자를 고정합니다.
         </li>
@@ -207,21 +191,13 @@ export default function IPhonePage() {
         목록(팔레트)이 나타납니다. 손가락을 옮긴 뒤 떼면 그 문자가 입력됩니다.
       </p>
       <ul className="pl-8 my-2 list-disc space-y-1">
-        <li>
-          한글 키: 쌍자음·이중모음처럼 같은 키로 바로 넣기 어려운 글자
-        </li>
+        <li>한글 키: 쌍자음·이중모음처럼 같은 키로 바로 넣기 어려운 글자</li>
         <li>영문 키: 악센트 문자 등</li>
         <li>
           <strong>.com</strong> 키: 기기에 추가된 키보드 언어를 바탕으로 한
           다른 도메인
         </li>
       </ul>
-      <p>
-        iPhone과 iPad <strong>유동식</strong>(떠 있는) 키보드는 한 줄로 보여
-        주고, iPad를 화면 아래에 붙인 키보드는 여러 줄로 보여 줍니다. iPad
-        일반 키보드의 팔레트에는 그냥 눌러서 나오는 글자는 넣지 않고, 추가로
-        고를 수 있는 글자만 남깁니다.
-      </p>
       <p>
         삭제 키를 길게 누르면 글자가 연속으로 지워집니다. 속도는{" "}
         <strong>세부 설정 → 연속 삭제 속도</strong>에서 바꿉니다.
@@ -235,23 +211,20 @@ export default function IPhonePage() {
         그 방향으로 밀면 됩니다. 길게 눌러 나오는 팔레트와는 별개입니다.
       </p>
 
-      <h4>제스처 자판 (천지인·모아키 등)</h4>
+      <h4>제스처 자판 (천지인, 단모음 등)</h4>
       <p>
         <strong>제스처</strong> 태그가 있는 자판은 키를 누른 채로
         위·아래·왼쪽·오른쪽으로 밀어 다른 글자를 넣습니다.
-        천지인·나랏글·모아키처럼 키가 적은 모바일형 배열이 여기에 해당합니다.
+        천지인·단모음처럼 키가 적은 모바일형 배열이 여기에 해당합니다.
         가운데를 그대로 떼면 숫자나 기본 글자가 들어갈 수 있습니다.
-      </p>
-      <p>
-        iPad의 <strong>키 휙 넘기기</strong>와 비슷해 보이지만, 제스처는 그
-        자판 데이터에 들어 있는 동작이라 설정에서 끄고 켤 수 없습니다.
       </p>
 
       <h4>커서를 손가락으로 옮기기</h4>
       <p>
         스페이스 바를 <strong>길게 누르면</strong> 트랙패드 모드로 바뀝니다.
         손가락을 좌우로 움직이면 글자 단위로, 위아래로 움직이면 단어 단위로
-        커서가 이동합니다. 손가락을 떼면 끝납니다.
+        커서가 이동합니다. 손가락을 떼면 끝납니다. 손가락을 더 빠르게 움직이면
+        커서도 더 빠르게 움직입니다.
       </p>
 
       <h4>기능 키</h4>
@@ -409,7 +382,7 @@ export default function IPhonePage() {
           ["보조 레이블", "보조 문자 레이블도 함께 표시"],
           [
             "자모 색상 구분",
-            "자모 위치에 따라 키 색을 구분. 켜면 레이블 색상 설정에서 두벌식·세벌식·방점 색을 고르거나, 오른쪽 위 프리셋(클래식 / 푸른색 계열 / 붉은색 계열)을 적용. 세벌식 갈마들이용 두 색(초성-중성, 중성-종성)은 상황에 맞는 키 레이블을 끈 경우에만 쓰임",
+            "자모 위치에 따라 키 색을 구분. 켜면 레이블 색상 설정에서 두벌식·세벌식·방점 색을 고르거나, 오른쪽 위 프리셋(클래식 / 푸른색 계열 / 붉은색 계열)을 적용. 세벌식 갈마들이용 색(초성-중성, 중성-종성)은 상황에 맞는 키 레이블을 끈 경우에만 쓰임",
           ],
         ]}
       />
@@ -442,7 +415,7 @@ export default function IPhonePage() {
       <h4>써 보기</h4>
       <p>
         긴 글을 입력해 자판을 시험하는 화면입니다. 오른쪽 위에서{" "}
-        <strong>글꼴...</strong>을 누르면 서체 종류(자동 / 기본 / 옛한글),
+        <strong>글꼴...</strong>을 누르면 서체 종류(자동·현대 한글·옛한글),
         두께, 크기, 줄 높이를 바꿀 수 있습니다.{" "}
         <strong>입력 내용 복사</strong>와 <strong>내용 지우기</strong>도
         있습니다.
@@ -457,7 +430,7 @@ export default function IPhonePage() {
 
       <h3 id="개인-정보">6. 개인 정보</h3>
       <p>
-        iOS·iPadOS는 타사 키보드에 대해 「입력 내용에 접근할 수 있다」는
+        iOS·iPadOS는 타사 키보드에 대해 ‘입력 내용에 접근할 수 있다’는
         경고를 띄울 수 있습니다. 이는 운영체제 보안 정책에 따른 안내입니다.
       </p>
       <p>
