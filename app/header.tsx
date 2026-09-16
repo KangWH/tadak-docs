@@ -7,8 +7,8 @@ export default function Header() {
         <div className="px-4 py-4 flex flex-row gap-x-4 items-baseline">
           <h1><Link href="/">타닥</Link></h1>
           <Link href="/docs/mac">macOS 입력기</Link>
-          <Link href="/docs/iphone">iOS 입력기</Link>
-          <Link href="/docs/editor">키보드 편집기</Link>
+          <Link href="/docs/iphone">iOS 키보드</Link>
+          <Link href="/docs/editor">편집기</Link>
           {/* <Link href="/docs/develop">개발 문서</Link> */}
         </div>
       </div>
