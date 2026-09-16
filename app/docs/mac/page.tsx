@@ -72,7 +72,7 @@ export default function MacPage() {
       </p>
       <p>
         iPhone·iPad용 설명서는{" "}
-        <Link href="/docs/iphone">iOS 입력기</Link>를 참고하세요.
+        <Link href="/docs/iphone">iOS 키보드</Link>를 참고하세요.
       </p>
 
       <div className="my-6 flex flex-col items-center gap-y-2">
