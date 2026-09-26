@@ -4,6 +4,7 @@ import { useEffect, useId, useRef, useState } from "react";
 import Link from "next/link";
 
 const nav = [
+  { href: "/docs/layouts", label: "키보드 배열" },
   { href: "/docs/mac", label: "macOS 입력기" },
   { href: "/docs/iphone", label: "iOS 키보드" },
   { href: "/docs/editor", label: "편집기" },
