@@ -1,7 +1,8 @@
 import Keyboard from "@/app/components/keyboard";
-import { twoSetLayout, twoSetOldLayout, dujulELayout, dugyeobELayout } from "./twoSetLayouts";
-import { threeSet390Layout, threeSet390NoShiftLayout, threeSet391Layout, threeSet393Layout, threeSet2015Layout, threeSet2015OldLayout, threeSetP2Layout, threeSetP3Layout, threeSetD2Layout, shinThreeSetLayout, shinThreeSet2003Layout, shinThreeSetMLayout, shinThreeSetMJejuLayout, shinThreeSetP2Layout, shinThreeSetP2OldLayout, shinThreeSetHSLayout, chamShinThreeSetLayout, chamShinThreeSetDLayout, threeSetD2OldLayout, shinThreeSet2015Layout } from "./threeSetLayouts";
-import { threeSetAhnmataeLayout, threeSetSemoELayout, threeSetSemoEOldLayout } from "./chordedThreeSetLayouts";
+import { twoSetLayout, twoSetOldLayout, dujulELayout, dugyeobELayout } from "./twoset/twoSetLayouts";
+import { threeSet390Layout, threeSet390NoShiftLayout, threeSet391Layout, threeSet393Layout, threeSet2015Layout, threeSet2015OldLayout, threeSetP2Layout, threeSetP3Layout, threeSetD2Layout, threeSetD2OldLayout } from "./threesetkong/threeSetKongLayouts";
+import { shinThreeSetLayout, shinThreeSet2003Layout, shinThreeSetMLayout, shinThreeSetMJejuLayout, shinThreeSetP2Layout, shinThreeSetP2OldLayout, shinThreeSetHSLayout, chamShinThreeSetLayout, chamShinThreeSetDLayout, shinThreeSet2015Layout } from "./threesetshin/threeSetShinLayouts";
+import { threeSetAhnmataeLayout, threeSetSemoELayout, threeSetSemoEOldLayout } from "./threesetchorded/chordedThreeSetLayouts";
 
 export default function Layouts() {
   return (
