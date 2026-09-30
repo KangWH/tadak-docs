@@ -166,7 +166,77 @@ export default function Layouts() {
       <h4>세모이 (세벌식 모아치기 e) 옛한글</h4>
       <Keyboard labelData={threeSetSemoEOldLayout} />
       <p>세모이 배열의 옛한글 지원 버전입니다. 모아치기 배열 특성상 모든 옛한글 낱자의 조합을 지원하지는 않으나, 자주 사용되는 낱자는 조합이 가능합니다. 현대 한글 배열과 달리, 옛한글 배열은 약어 기능을 지원하지 않습니다.</p>
-      <p>초성&nbsp;<code>ㄴ</code>, 중성&nbsp;<code>ㆎ</code>, 종성&nbsp;<code>ㅭ</code> 키는 각각 옛한글 확장 키로 사용됩니다. 옛한글 확장 키와 다른 키를 함께 누르면 위 배열에서 가장 오른쪽에 있는 옛한글 낱자를 입력할 수 있습니다.</p>
+      <p>현대 한글 배열의 입력법에 더하여, 다음의 조합으로 옛한글 낱자를 입력할 수 있습니다.</p>
+      <ul>
+        <li>초성&nbsp;<code>ㄴ</code>, 중성&nbsp;<code>ㆎ</code>, 종성&nbsp;<code>ㅭ</code> 키는 각각 옛한글 확장 키로 사용됩니다. 옛한글 확장 키와 다른 키를 함께 누르면 위 배열에서 가장 오른쪽에 있는 옛한글 낱자를 입력할 수 있습니다.</li>
+        <li>
+          <p>초성&nbsp;<code>ㅿ</code> 키와 <code>ㅄ</code> 키와 <code>ㅅ</code>, <code>ㅈ</code>, <code>ㆀ</code>(ㅊ 대체/쌍자음)을 조합하면 각각 치두음과 정치음을 입력할 수 있습니다.</p>
+          <ul>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᄼᅠ</span> = <code>ㅅ</code>+<code>ㅿ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᄽᅠ</span> = <code>ㅅ</code>+<code>ㆀ</code>+<code>ㅿ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᄾᅠ</span> = <code>ㅅ</code>+<code>ㅄ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᄿᅠ</span> = <code>ㅅ</code>+<code>ㆀ</code>+<code>ㅄ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅐᅠ</span> = <code>ㅈ</code>+<code>ㅄ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅏᅠ</span> = <code>ㅈ</code>+<code>ㆀ</code>+<code>ㅿ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅐᅠ</span> = <code>ㅈ</code>+<code>ㅄ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅑᅠ</span> = <code>ㅈ</code>+<code>ㆀ</code>+<code>ㅄ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅔᅠ</span> = <code>ㆀ</code>+<code>ㅿ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅕᅠ</span> = <code>ㆀ</code>+<code>ㅄ</code></li>
+          </ul>
+        </li>
+        <li>
+          <p>초성&nbsp;<code>ㆀ</code> 키와 다른 초성을 조합하면 각자 병서나 ㅇ계 합용 병서 초성을 입력할 수 있습니다.</p>
+          <ul>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅁᅠ</span> = <code>ㄱ</code>+<code>ㆀ</code></li>
+            <li>ㅥ = <code>ㄴ</code>+<code>ㆀ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅂᅠ</span> = <code>ㄷ</code>+<code>ㆀ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᄙᅠ</span> = <code>ㄹ</code>+<code>ㆀ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅄᅠ</span> = <code>ㅂ</code>+<code>ㆀ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅅᅠ</span> = <code>ㅅ</code>+<code>ㆀ</code></li>
+            <li>ㆅ = <code>ㅎ</code>+<code>ㆀ</code></li>
+          </ul>
+        </li>
+        <li>
+          <p>다음 초성은 구성 낱자 키를 동시에 눌러 입력할 수 있습니다.</p>
+          <ul>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᄗᅠ</span>, <span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅞᅠ</span>, <span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥢᅠ</span>, <span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥣᅠ</span></li>
+            <li>ㄺ, ㄻ, ㄼ, <span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥭᅠ</span>, ㅀ</li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥰᅠ</span>, ㅮ</li>
+            <li>ㅲ, ㅳ, (ㅄ), ㅶ</li>
+            <li>ㅴ, ㅵ ― <code>ㅄ</code>&nbsp;키와 <code>ㄱ</code> 또는 <code>ㄷ</code> 키를 동시에 누르면 됩니다.</li>
+            <li>ㅺ, <span style={{fontFamily: 'var(--font-old-hangul)'}}>ᄱᅠ</span></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥶᅠ</span></li>
+          </ul>
+        </li>
+        <li>
+          <p>추가로 다음 초성을 조합하여 입력할 수 있습니다.</p>
+          <ul>
+            <li>ㅹ = <code>ㄴ</code>+<code>ㅂ</code>+<code>ㅇ</code></li>
+            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᄗᅠ</span> = <code>ㄷ</code>+<code>ㄱ</code></li> */}
+            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅞᅠ</span> = <code>ㄷ</code>+<code>ㄹ</code></li> */}
+            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥢᅠ</span> = <code>ㄷ</code>+<code>ㅅ</code></li> */}
+            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥣᅠ</span> = <code>ㄷ</code>+<code>ㅈ</code></li> */}
+            {/* <li>ㄺ = <code>ㄹ</code>+<code>ㄱ</code></li> */}
+            {/* <li>ㄻ = <code>ㄹ</code>+<code>ㅁ</code></li> */}
+            {/* <li>ㄼ = <code>ㄹ</code>+<code>ㅂ</code></li> */}
+            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥭᅠ</span> = <code>ㄹ</code>+<code>ㅈ</code></li> */}
+            {/* <li>ㅀ = <code>ㄹ</code>+<code>ㅎ</code></li> */}
+            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥰᅠ</span> = <code>ㅁ</code>+<code>ㄷ</code></li> */}
+            {/* <li>ㅮ = <code>ㅁ</code>+<code>ㅂ</code></li> */}
+            {/* <li>ㅲ = <code>ㅂ</code>+<code>ㄱ</code></li> */}
+            {/* <li>ㅳ = <code>ㅂ</code>+<code>ㄷ</code></li> */}
+            {/* <li>ㅴ = <code>ㅄ</code>+<code>ㄱ</code></li> */}
+            {/* <li>ㅵ = <code>ㅄ</code>+<code>ㄷ</code></li> */}
+            {/* <li>ㅶ = <code>ㅂ</code>+<code>ㅈ</code></li> */}
+            {/* <li>ㅺ = <code>ㅅ</code>+<code>ㄱ</code></li> */}
+            <li>ㅼ = <code>ㅅ</code>+<code>ㄹ</code></li>
+            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᄱᅠ</span> = <code>ㅅ</code>+<code>ㅁ</code></li> */}
+            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥶᅠ</span> = <code>ㅇ</code>+<code>ㄹ</code></li> */}
+            <li>ㅽ = <code>ㅅ</code>+<code>ㅎ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅊᅠ</span> = <code>ㅇ</code>+<code>ㅎ</code></li>
+          </ul>
+        </li>
+      </ul>
       <p><a href="https://blog.naver.com/eekdland/220526834927" target="_blank">자세한 정보 ›</a></p>
       <h4>안마태 소리 글판</h4>
       <Keyboard labelData={threeSetAhnmataeLayout} />
