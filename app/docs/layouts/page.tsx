@@ -236,6 +236,22 @@ export default function Layouts() {
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅊᅠ</span> = <code>ㅇ</code>+<code>ㅎ</code></li>
           </ul>
         </li>
+        <li>
+          <p>중성은 다음과 같이 조합하여 조합하여 입력할 수 있습니다.</p>
+          <ul>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᅶ</span> = <code>ㅏ</code>+<code>ㆉ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᅷ</span> = <code>ㅏ</code>+<code>ㆌ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᆀ</span> = <code>ㆉ</code>+<code>ㅔ</code></li>
+            <li>ㆇ = <code>ㆉ</code>+<code>ㅓ</code></li>
+            <li>ㆈ = <code>ㆉ</code>+<code>ㅕ</code></li>
+            <li>ㆊ = <code>ㆌ</code>+<code>ㅕ</code></li>
+            <li>ㆋ = <code>ㆌ</code>+<code>ㅔ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᆕ</span> = <code>ㅡ</code>+<code>ㅜ</code></li>
+            <li>ㆍ = <code>ㅡ</code>+<code>ㅏ</code></li>
+            <li>ㆎ = <code>ㅡ</code>+<code>ㅏ</code>+<code>ㅣ</code> ― <code>ㆎ</code>&nbsp;키를 누르는 것이 힘든 경우 키 조합을 대신 사용할 수 있습니다.</li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᆢ</span> = <code>ㅡ</code>+<code>ㅓ</code></li>
+          </ul>
+        </li>
       </ul>
       <p><a href="https://blog.naver.com/eekdland/220526834927" target="_blank">자세한 정보 ›</a></p>
       <h4>안마태 소리 글판</h4>
