@@ -133,14 +133,19 @@ export default function Layouts() {
       <p>낱자를 입력하는 기본 규칙은 다음과 같습니다.</p>
       <ul>
         <li>키를 단독으로 눌러 입력할 수 있는 10개의 초성 외에, 거센소리 4개는 초성 ㅎ과 ㄱ·ㄷ·ㅂ·ㅈ을 함께 눌러 입력할 수 있으며, 된소리 5개는 초성 ㅇ과 ㄱ·ㄷ·ㅂ·ㅅ·ㅈ을 함께 눌러 입력할 수 있습니다.</li>
-        <li>중성·종성 키는 단독으로 누를 경우 왼쪽의 낱자가 입력되며, <code>중⇧</code>나 <code>종⇧</code> 키와 함께 누르면 오른쪽 낱자가 입력됩니다. <code>종⇧</code>&nbsp;키는 다른 종성 키와의 조합 없이 단독으로 사용하면 종성 ㅆ을 입력합니다.</li>
+        <li>
+          <p>중성·종성 키는 단독으로 누를 경우 왼쪽의 낱자가 입력되며, <code>중⇧</code>나 <code>종⇧</code> 키와 함께 누르면 오른쪽 낱자가 입력됩니다.</p>
+          <ul>
+            <li><code>중⇧</code>&nbsp;키는 <code>ㅗ</code>&nbsp;키와 동일한 역할을 합니다. 단, 중성 ㅑ는 <code>중⇧</code>+<code>ㅡ</code>로만 입력할 수 있습니다.</li>
+            <li><code>종⇧</code>&nbsp;키는 다른 종성 키와의 조합 없이 단독으로 사용하면 종성 ㅆ을 입력합니다.</li>
+          </ul>
+        </li>
         <li>중성 ㅐ, ㅟ, ㅞ, ㅢ와 종성 ㄼ, ㄽ, ㅄ은 낱자를 이루는 각 키를 동시에 눌러 입력합니다(예: ㅐ = <code>ㅏ</code>+<code>ㅣ</code>, ㄼ = <code>ㄹ</code>+<code>ㅂ</code>). 중성 ㅘ, ㅙ, ㅚ, ㅝ는 <code>중⇧</code>를 사용하는 대신 낱자를 이루는 키를 동시에 눌러서도 입력할 수 있습니다.</li>
         <li>
-          <p>몇 가지 중성은 다음의 규칙으로도 조합할 수 있습니다.</p>
+          <p>중성 ㅛ와 ㅟ는 다음의 규칙으로도 조합할 수 있습니다.</p>
           <ul>
             <li>ㅛ = <code>ㅏ</code>+<code>ㅓ</code></li>
             <li>ㅟ = <code>ㅔ</code>+<code>ㅣ</code></li>
-            <li>ㅠ = <code>ㅗ</code>+<code>ㅜ</code></li>
           </ul>
         </li>
         <li>
@@ -160,7 +165,7 @@ export default function Layouts() {
           </ul>
         </li>
       </ul>
-      <p>음절이 조합되지 않는 키 조합을 눌러 약어를 입력할 수 있습니다. 예를 들어, 초성&nbsp;<code>ㅎ</code>과 종성&nbsp;<code>ㄴ</code>을 동시에 누르면 ‘한국’이 입력되며, 초성&nbsp;<code>ㅁ</code>, 초성&nbsp;<code>ㅈ</code>, 중성&nbsp;<code>ㅔ</code>를 동시에 누르면 ‘문제’가 입력됩니다. 세모이 배열은 약 1,000여 개의 약어를 지원합니다.</p>
+      <p>정상적인 현대 한글 음절이 만들어지지 않는 키 조합으로 약어를 입력할 수 있습니다. 예를 들어, 초성&nbsp;<code>ㅎ</code>과 종성&nbsp;<code>ㄴ</code>을 동시에 누르면 ‘한국’이 입력되며, 초성&nbsp;<code>ㅁ</code>, 초성&nbsp;<code>ㅈ</code>, 중성&nbsp;<code>ㅔ</code>를 동시에 누르면 ‘문제’가 입력됩니다. 세모이 배열은 약 1,000여 개의 약어를 지원합니다.</p>
       <p><code>기호</code>+<code>※</code>, <code>기호</code>+<code>·</code>, <code>기호</code>+<code>:</code> 키를 눌러 총 6개 레이어의 기호 확장 기능을 사용할 수 있습니다.</p>
       <p><a href="https://blog.naver.com/eekdland/220526834927" target="_blank">자세한 정보 ›</a></p>
       <h4>세모이 (세벌식 모아치기 e) 옛한글</h4>
@@ -218,7 +223,7 @@ export default function Layouts() {
           </ul>
         </li>
         <li>
-          <p>중성은 다음과 같이 조합하여 입력할 수 있습니다.</p>
+          <p>중성은 다음과 같이 조합하여 입력할 수 있습니다. 현대 한글을 입력할 때와 마찬가지로 (한 가지 예외를 제외하면) <code>중⇧</code>&nbsp;키는 <code>ㅗ</code>&nbsp;키와 동일한 역할을 합니다.</p>
           <ul>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᅶ</span> = <code>ㅏ</code>+<code>ㆉ</code></li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᅷ</span> = <code>ㅏ</code>+<code>ㆌ</code></li>
@@ -231,7 +236,7 @@ export default function Layouts() {
             <li>ㆊ = <code>ㆌ</code>+<code>ㅕ</code></li>
             <li>ㆋ = <code>ㆌ</code>+<code>ㅔ</code></li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟힻ</span> = <code>ㅡ</code>+<code>ㅔ</code></li>
-            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟힼ</span> = <code>ㅡ</code>+<code>ㅗ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟힼ</span> = <code>ㅡ</code>+<code>ㅗ</code> ― <code>중⇧</code>+<code>ㅡ</code>로는 조합할 수 없습니다.</li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᆕ</span> = <code>ㅡ</code>+<code>ㅜ</code></li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᆘ</span> = <code>ㅏ</code>+<code>ㅔ</code></li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟힾ</span> = <code>ㅕ</code>+<code>ㅔ</code></li>
