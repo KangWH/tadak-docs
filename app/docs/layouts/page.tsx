@@ -236,6 +236,7 @@ export default function Layouts() {
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᆘ</span> = <code>ㅏ</code>+<code>ㅔ</code></li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟힾ</span> = <code>ㅕ</code>+<code>ㅔ</code></li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟힿ</span> = <code>ㅓ</code>+<code>ㅔ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟퟀ</span> = <code>ㅣ</code>+<code>ㅔ</code>+<code>ㅗ</code> = <code>ㅣ</code>+<code>ㅜ</code>+<code>ㅗ</code></li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟퟄ</span> = <code>ㅓ</code>+<code>ㅕ</code></li>
             <li>ㆍ = <code>ㅡ</code>+<code>ㅏ</code></li>
             <li>ㆎ = <code>ㅡ</code>+<code>ㅏ</code>+<code>ㅣ</code> ― <code>ㆎ</code>&nbsp;키를 누르는 것이 힘든 경우 키 조합을 대신 사용할 수 있습니다.</li>
