@@ -218,16 +218,25 @@ export default function Layouts() {
           </ul>
         </li>
         <li>
-          <p>중성은 다음과 같이 조합하여 조합하여 입력할 수 있습니다.</p>
+          <p>중성은 다음과 같이 조합하여 입력할 수 있습니다.</p>
           <ul>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᅶ</span> = <code>ㅏ</code>+<code>ㆉ</code></li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᅷ</span> = <code>ㅏ</code>+<code>ㆌ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᅾ</span> = <code>ㅕ</code>+<code>ㅜ</code></li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᆀ</span> = <code>ㆉ</code>+<code>ㅔ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟힰ</span> = <code>ㅡ</code>+<code>ㅕ</code></li>
             <li>ㆇ = <code>ㆉ</code>+<code>ㅓ</code></li>
             <li>ㆈ = <code>ㆉ</code>+<code>ㅕ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᆉ</span> = <code>ㅜ</code>+<code>ㅏ</code></li>
             <li>ㆊ = <code>ㆌ</code>+<code>ㅕ</code></li>
             <li>ㆋ = <code>ㆌ</code>+<code>ㅔ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟힻ</span> = <code>ㅡ</code>+<code>ㅔ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟힼ</span> = <code>ㅡ</code>+<code>ㅗ</code></li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᆕ</span> = <code>ㅡ</code>+<code>ㅜ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᆘ</span> = <code>ㅏ</code>+<code>ㅔ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟힾ</span> = <code>ㅕ</code>+<code>ㅔ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟힿ</span> = <code>ㅓ</code>+<code>ㅔ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟퟄ</span> = <code>ㅓ</code>+<code>ㅕ</code></li>
             <li>ㆍ = <code>ㅡ</code>+<code>ㅏ</code></li>
             <li>ㆎ = <code>ㅡ</code>+<code>ㅏ</code>+<code>ㅣ</code> ― <code>ㆎ</code>&nbsp;키를 누르는 것이 힘든 경우 키 조합을 대신 사용할 수 있습니다.</li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᆢ</span> = <code>ㅡ</code>+<code>ㅓ</code></li>
