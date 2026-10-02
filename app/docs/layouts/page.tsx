@@ -212,26 +212,7 @@ export default function Layouts() {
           <p>추가로 다음 초성을 조합하여 입력할 수 있습니다.</p>
           <ul>
             <li>ㅹ = <code>ㄴ</code>+<code>ㅂ</code>+<code>ㅇ</code></li>
-            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᄗᅠ</span> = <code>ㄷ</code>+<code>ㄱ</code></li> */}
-            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅞᅠ</span> = <code>ㄷ</code>+<code>ㄹ</code></li> */}
-            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥢᅠ</span> = <code>ㄷ</code>+<code>ㅅ</code></li> */}
-            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥣᅠ</span> = <code>ㄷ</code>+<code>ㅈ</code></li> */}
-            {/* <li>ㄺ = <code>ㄹ</code>+<code>ㄱ</code></li> */}
-            {/* <li>ㄻ = <code>ㄹ</code>+<code>ㅁ</code></li> */}
-            {/* <li>ㄼ = <code>ㄹ</code>+<code>ㅂ</code></li> */}
-            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥭᅠ</span> = <code>ㄹ</code>+<code>ㅈ</code></li> */}
-            {/* <li>ㅀ = <code>ㄹ</code>+<code>ㅎ</code></li> */}
-            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥰᅠ</span> = <code>ㅁ</code>+<code>ㄷ</code></li> */}
-            {/* <li>ㅮ = <code>ㅁ</code>+<code>ㅂ</code></li> */}
-            {/* <li>ㅲ = <code>ㅂ</code>+<code>ㄱ</code></li> */}
-            {/* <li>ㅳ = <code>ㅂ</code>+<code>ㄷ</code></li> */}
-            {/* <li>ㅴ = <code>ㅄ</code>+<code>ㄱ</code></li> */}
-            {/* <li>ㅵ = <code>ㅄ</code>+<code>ㄷ</code></li> */}
-            {/* <li>ㅶ = <code>ㅂ</code>+<code>ㅈ</code></li> */}
-            {/* <li>ㅺ = <code>ㅅ</code>+<code>ㄱ</code></li> */}
             <li>ㅼ = <code>ㅅ</code>+<code>ㄹ</code></li>
-            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᄱᅠ</span> = <code>ㅅ</code>+<code>ㅁ</code></li> */}
-            {/* <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ꥶᅠ</span> = <code>ㅇ</code>+<code>ㄹ</code></li> */}
             <li>ㅽ = <code>ㅅ</code>+<code>ㅎ</code></li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅊᅠ</span> = <code>ㅇ</code>+<code>ㅎ</code></li>
           </ul>
