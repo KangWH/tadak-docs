@@ -33,7 +33,7 @@ function labelColorClass(labelType: LabelType) {
 
 function LabelRow(props: { labels: KeyLabelEntry[]; textClass: string }) {
   return (
-    <p className={`m-0 leading-tight text-center flex flex-row justify-center ${props.textClass} gap-x-0.5`}>
+    <p className={`m-0 leading-tight text-center flex flex-row justify-center ${props.textClass} lg:gap-x-0.5`}>
       {props.labels.length === 0
         ? '\u00A0'
         : props.labels.map((entry, index) => (
