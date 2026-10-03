@@ -160,6 +160,7 @@ export default function Layouts() {
             <li>ㄻ = <code>ㄹ</code>+<code>ㅁ</code> = <code>종⇧</code>+<code>ㅂ</code>+<code>ㅅ</code> (입력 편의를 위한 규칙) ― 일반적으로 <code>ㄹ</code>+<code>ㅁ</code>보다 <code>종⇧</code>+<code>ㅂ</code>+<code>ㅅ</code>이 더 편리합니다.</li>
             <li>ㄾ = <code>ㅁ</code>(ㄷ)+<code>ㅇ</code>(ㅀ)</li>
             <li>ㄿ = <code>ㅂ</code>(ㅍ)+<code>ㅇ</code>(ㅀ)</li>
+            <li>(ㅆ = <code>ㅅ</code>+<code>ㅇ</code>) ― <code>종⇧</code>키를 사용하는 것이 더 편리합니다.</li>
             <li>ㅋ = <code>종⇧</code>+<code>ㄹ</code>+<code>ㅇ</code> (입력 편의를 위한 규칙) ― 중성이 ㅒ, ㅓ, ㅕ, ㅝ인 경우 <code>종⇧</code>+<code>ㄱ</code>보다 <code>종⇧</code>+<code>ㄹ</code>+<code>ㅇ</code>이 편리할 수 있습니다.</li>
             <li>ㅌ = <code>ㄴ</code>(ㅎ)+<code>ㅁ</code>(ㄷ) = <code>종⇧</code>+<code>ㄹ</code>+<code>ㅂ</code> (입력 편의를 위한 규칙) ― 중성이 ㅒ, ㅓ, ㅕ, ㅝ인 경우 <code>ㄴ</code>+<code>ㅁ</code>보다 <code>종⇧</code>+<code>ㄹ</code>+<code>ㅂ</code>이 편리할 수 있습니다.</li>
           </ul>
@@ -246,6 +247,23 @@ export default function Layouts() {
             <li>ㆍ = <code>ㅡ</code>+<code>ㅏ</code></li>
             <li>ㆎ = <code>ㅡ</code>+<code>ㅏ</code>+<code>ㅣ</code> ― <code>ㆎ</code>&nbsp;키를 누르는 것이 힘든 경우 키 조합을 대신 사용할 수 있습니다.</li>
             <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᆢ</span> = <code>ㅡ</code>+<code>ㅓ</code></li>
+          </ul>
+        </li>
+        <li>
+          <p>종성은 다음 조합을 입력할 수 있습니다.</p>
+          <ul>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᅠᇺ</span> = <code>ㄱ</code>+<code>ㄴ</code></li>
+            <li><span style={{fontFamily: 'var(--font-old-hangul)'}}>ᅟᅠᇻ</span> = <code>ㄱ</code>+<code>ㅂ</code></li>
+            <li>ㅧ = <code>ㄴ</code>+<code>ㅅ</code></li>
+            <li>ㅨ = <code>ㄴ</code>+<code>ㅿ</code></li>
+            <li>ㅩ = <code>ㄽ</code>+<code>ㄱ</code></li>
+            <li>ㅬ = <code>ㄹ</code>+<code>ㅿ</code></li>
+            <li>ㅫ = <code>ㄽ</code>+<code>ㅂ</code></li>
+            <li>ㅮ = <code>ㅁ</code>+<code>ㅂ</code></li>
+            <li>ㅯ = <code>ㅁ</code>+<code>ㅅ</code></li>
+            <li>ㅰ = <code>ㅁ</code>+<code>ㅿ</code></li>
+            <li>ㆂ = <code>ㆁ</code>+<code>ㅅ</code></li>
+            <li>ㆃ = <code>ㆁ</code>+<code>ㅿ</code></li>
           </ul>
         </li>
       </ul>
