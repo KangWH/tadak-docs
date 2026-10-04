@@ -36,7 +36,7 @@ export default function Layouts() {
             <li><code>종⇧</code>&nbsp;키는 다른 종성 키와의 조합 없이 단독으로 사용하면 종성 ㅆ을 입력합니다.</li>
           </ul>
         </li>
-        <li>중성 ㅐ, ㅟ, ㅞ, ㅢ와 종성 ㄼ, ㄽ, ㅄ은 낱자를 이루는 각 키를 동시에 눌러 입력합니다(예: ㅐ = <code>ㅏ</code>+<code>ㅣ</code>, ㄼ = <code>ㄹ</code>+<code>ㅂ</code>). 중성 ㅘ, ㅙ, ㅚ, ㅝ는 <code>중⇧</code>를 사용하는 대신 낱자를 이루는 키를 동시에 눌러서도 입력할 수 있습니다.</li>
+        <li>중성 ㅐ, ㅘ, ㅙ, ㅚ, ㅝ, ㅞ, ㅟ, ㅢ와 종성 ㄼ, ㄽ, ㅄ은 낱자를 이루는 각 키를 동시에 눌러 입력합니다(예: ㅐ = <code>ㅏ</code>+<code>ㅣ</code>, ㄼ = <code>ㄹ</code>+<code>ㅂ</code>). 중성 ㅘ, ㅙ, ㅚ, ㅝ는 <code>ㅗ</code>·<code>ㅜ</code> 대신 <code>중⇧</code>를 눌러서도 입력할 수 있습니다.</li>
         <li>
           <p>중성 ㅛ와 ㅟ는 다음의 규칙으로도 조합할 수 있습니다.</p>
           <ul>
