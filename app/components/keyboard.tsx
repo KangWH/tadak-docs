@@ -2,14 +2,14 @@ export type LabelType = 'leading' | 'vowel' | 'trailing' | 'consonant' | 'tone' 
 
 export interface KeyLabelEntry {
   label: string;
-  labelType: LabelType;
+  labelType?: LabelType;
   requiresOldHangulFont?: boolean;
 }
 
 export interface KeyLabel {
   keyCode: string;
   bottomLabels: KeyLabelEntry[];
-  topLabels: KeyLabelEntry[];
+  topLabels?: KeyLabelEntry[];
 }
 
 interface KeyProps {
@@ -20,7 +20,7 @@ interface KeyboardProps {
   labelData: KeyLabel[][];
 }
 
-function labelColorClass(labelType: LabelType) {
+function labelColorClass(labelType?: LabelType) {
   switch (labelType) {
     case 'leading': return 'text-green-600 dark:text-green-400'
     case 'vowel': return 'text-yellow-700 dark:text-yellow-600'
@@ -51,7 +51,7 @@ function LabelRow(props: { labels: KeyLabelEntry[]; textClass: string }) {
 function Key(props: KeyProps) {
   return (
     <div className="m-0.5 lg:m-0.75 w-9 h-9 md:w-11 md:h-11 lg:w-13.5 lg:h-13.5 flex flex-col justify-center bg-white dark:bg-zinc-900 rounded-lg shadow dark:shadow-white/10 transition-all">
-      <LabelRow labels={props.labelData.topLabels} textClass="text-xs md:text-sm lg:text-base" />
+      <LabelRow labels={props.labelData.topLabels ?? []} textClass="text-xs md:text-sm lg:text-base" />
       <LabelRow labels={props.labelData.bottomLabels} textClass="text-sm md:text-base lg:text-lg" />
     </div>
   )
