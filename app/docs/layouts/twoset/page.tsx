@@ -1,5 +1,5 @@
 import Keyboard from "@/app/components/keyboard";
-import { twoSetLayout, twoSetOldLayout, dujulELayout, dugyeobELayout } from "./twoSetLayouts";
+import { twoSetLayout, twoSetOldLayout, twoSetNorthLayout, dujulELayout, dugyeobELayout } from "./twoSetLayouts";
 
 export default function Layouts() {
   return (
@@ -16,6 +16,9 @@ export default function Layouts() {
       <h3>두벌식 옛한글</h3>
       <Keyboard labelData={twoSetOldLayout} />
       <p>두벌식 표준 배열을 바탕으로, 옛한글 낱자와 방점을 입력할 수 있도록 변형한 배열입니다. 한 글자의 종성과 다음 글자의 초성을 구분해야 하는 경우에는 <code>❖</code>를 눌러 현재 음절 조합을 강제로 종료합니다.</p>
+      <h3>두벌식 북한 표준</h3>
+      <Keyboard labelData={twoSetNorthLayout} />
+      <p>북한 표준(국규 9256)으로 지정된 배열입니다. 왼손에 자음, 오른손에 모음이 배치되어 있으며, 낱자의 배치가 대한민국 표준과 다른 부분이 많습니다.</p>
       <h3>두줄이 (두벌식 줄맞춤 e)</h3>
       <Keyboard labelData={dujulELayout} />
       <p>신세기가 2026년에 공개한 두벌식 배열로, 낱자가 더 효율적으로 배치되어 있습니다. 자주 사용되는 자음인 ㅆ은 <code>shift</code>를 사용하지 않고 입력할 수 있습니다.</p>
