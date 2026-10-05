@@ -67,7 +67,7 @@ export default function Layouts() {
         <li>기본적인 약어 입력: <code>shift</code>&nbsp;키를 누른 채로 여러 한글 낱자 키를 동시에 눌러 약어를 입력할 수 있습니다. 예를 들어, <code>shift</code>&nbsp;키를 누른 채로 <code>ㄹ</code>&nbsp;키와 <code>ㅇ</code>&nbsp;키를 동시에 누르면 ‘으로’가 입력됩니다.</li>
         <li>대체 시프트 기능: <code>shift</code>&nbsp;키와 다른 키를 동시에 눌러 윗글쇠를 입력하는 대신, 낱자를 먼저 입력하고 대체 시프트 키 <code>(⇧)</code>를 누르면 쌍자음이나 ㅒ, ㅖ가 입력됩니다. 대체 시프트 키가 작동하지 않는 상황에서는 ‘/’가 입력됩니다.</li>
       </ul>
-      <p><a href="https://blog.naver.com/eekdland/224252538464" target="_blank">자세한 정보 ›</a></p>
+      <p><a href="https://blog.naver.com/eekdland/224288483666" target="_blank">자세한 정보 ›</a></p>
     </article>
   )
 }
