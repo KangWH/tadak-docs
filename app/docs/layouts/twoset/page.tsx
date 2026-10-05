@@ -1,5 +1,5 @@
 import Keyboard from "@/app/components/keyboard";
-import { twoSetLayout, twoSetOldLayout, twoSetNorthLayout, dujulELayout, dugyeobELayout } from "./twoSetLayouts";
+import { twoSetLayout, twoSetOldLayout, twoSetNorthLayout, dujulELayout, dugyeobEExtendedLayout, dugyeobELayout, dujulEExtendedLayout } from "./twoSetLayouts";
 
 export default function Layouts() {
   return (
@@ -19,14 +19,27 @@ export default function Layouts() {
       <h3>두벌식 북한 표준</h3>
       <Keyboard labelData={twoSetNorthLayout} />
       <p>북한 표준(국규 9256)으로 지정된 배열입니다. 왼손에 자음, 오른손에 모음이 배치되어 있으며, 낱자의 배치가 대한민국 표준과 다른 부분이 많습니다.</p>
-      <h3>두줄이 (두벌식 줄맞춤 e)</h3>
-      <Keyboard labelData={dujulELayout} />
-      <p>신세기가 2026년에 공개한 두벌식 배열로, 낱자가 더 효율적으로 배치되어 있습니다. 자주 사용되는 자음인 ㅆ은 <code>shift</code>를 사용하지 않고 입력할 수 있습니다.</p>
-      <p><a href="https://blog.naver.com/eekdland/224252538464" target="_blank">자세한 정보 ›</a></p>
       <h3>두겹이 (두벌식 겹받침 e)</h3>
       <Keyboard labelData={dugyeobELayout} />
+      <Keyboard labelData={dugyeobEExtendedLayout} />
       <p>신세기가 2026년에 공개한 두벌식 배열입니다. 두벌식 표준 배열에서 오른손의 <code>ㅑ</code>, <code>ㅓ</code>, <code>ㅏ</code>, <code>ㅣ</code> 키에 자주 쓰이는 겹받침을 배치한 배열입니다. 초성과 중성을 입력한 상태에서 이 네 키는 겹받침을 입력하는 데 사용됩니다.</p>
+      <p>기본적인 기능만 제공하는 기본 배열(위쪽) 대신 부가기능 포함 배열(아래쪽)을 사용하면 기호 입력, 기본적인 약어 입력, 대체 시프트 기능을 사용할 수 있습니다.</p>
+      <ul>
+        <li>기본적인 약어 입력: <code>shift</code>&nbsp;키를 누른 채로 여러 한글 낱자 키를 동시에 눌러 약어를 입력할 수 있습니다. 예를 들어, <code>shift</code>&nbsp;키를 누른 채로 <code>ㄹ</code>&nbsp;키와 <code>ㅇ</code>&nbsp;키를 동시에 누르면 ‘으로’가 입력됩니다.</li>
+        <li>대체 시프트 기능: <code>shift</code>&nbsp;키와 다른 키를 동시에 눌러 윗글쇠를 입력하는 대신, 낱자를 먼저 입력하고 대체 시프트 키 <code>(⇧)</code>를 누르면 쌍자음이나 ㅒ, ㅖ가 입력됩니다. 대체 시프트 키가 작동하지 않는 상황에서는 ‘;’가 입력됩니다.</li>
+      </ul>
       <p><a href="https://blog.naver.com/eekdland/224142632310" target="_blank">자세한 정보 ›</a></p>
+      <h3>두줄이 (두벌식 줄맞춤 e)</h3>
+      <Keyboard labelData={dujulELayout} />
+      <Keyboard labelData={dujulEExtendedLayout} />
+      <p>신세기가 2026년에 공개한 두벌식 배열로, 낱자가 더 효율적으로 배치되어 있습니다. 자주 사용되는 자음인 ㅆ은 <code>shift</code>를 사용하지 않고 입력할 수 있습니다.</p>
+      <p>기본적인 기능만 제공하는 기본 배열(위쪽) 대신 부가기능 포함 배열(아래쪽)을 사용하면 기호 입력, 겹받침 확장, 기본적인 약어 입력, 대체 시프트 기능을 사용할 수 있습니다.</p>
+      <ul>
+        <li>겹받침 확장: 두겹이 배열과 마찬가지로, 초성과 중성을 입력하고 종성을 입력할 차례에 <code>ㅕ</code>, <code>ㅡ</code>, <code>ㅏ</code>, <code>ㅣ</code>&nbsp;키를 사용하여 자주 사용되는 겹받침을 빠르게 입력할 수 있습니다.</li>
+        <li>기본적인 약어 입력: <code>shift</code>&nbsp;키를 누른 채로 여러 한글 낱자 키를 동시에 눌러 약어를 입력할 수 있습니다. 예를 들어, <code>shift</code>&nbsp;키를 누른 채로 <code>ㄹ</code>&nbsp;키와 <code>ㅇ</code>&nbsp;키를 동시에 누르면 ‘으로’가 입력됩니다.</li>
+        <li>대체 시프트 기능: <code>shift</code>&nbsp;키와 다른 키를 동시에 눌러 윗글쇠를 입력하는 대신, 낱자를 먼저 입력하고 대체 시프트 키 <code>(⇧)</code>를 누르면 쌍자음이나 ㅒ, ㅖ가 입력됩니다. 대체 시프트 키가 작동하지 않는 상황에서는 ‘/’가 입력됩니다.</li>
+      </ul>
+      <p><a href="https://blog.naver.com/eekdland/224252538464" target="_blank">자세한 정보 ›</a></p>
     </article>
   )
 }
