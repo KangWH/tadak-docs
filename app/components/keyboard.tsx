@@ -7,13 +7,16 @@ export interface KeyLabelEntry {
 }
 
 export interface KeyLabel {
-  keyCode: string;
+  keyCode?: string;
   bottomLabels: KeyLabelEntry[];
   topLabels?: KeyLabelEntry[];
 }
 
 interface KeyProps {
   labelData: KeyLabel;
+  hideTopLabels?: boolean;
+  flexibleSized?: boolean;
+  style?: React.CSSProperties;
 }
 
 interface KeyboardProps {
@@ -33,7 +36,7 @@ function labelColorClass(labelType?: LabelType) {
 
 function LabelRow(props: { labels: KeyLabelEntry[]; textClass: string }) {
   return (
-    <p className={`m-0 leading-tight text-center flex flex-row justify-center ${props.textClass} lg:gap-x-0.5`}>
+    <p className={`m-0 leading-none lg:leading-5 text-center flex flex-row justify-center ${props.textClass} lg:gap-x-0.5`}>
       {props.labels.length === 0
         ? '\u00A0'
         : props.labels.map((entry, index) => (
@@ -48,11 +51,18 @@ function LabelRow(props: { labels: KeyLabelEntry[]; textClass: string }) {
   )
 }
 
-function Key(props: KeyProps) {
+export function Key(props: KeyProps) {
+  const topLabels = props.labelData.topLabels ?? []
+  const bottomLabels = props.labelData.bottomLabels
+
+  const widthClass = props.flexibleSized ? '' : 'w-9 h-9 md:w-11 md:h-11 lg:w-13.5 lg:h-13.5'
+
   return (
-    <div className="m-0.5 lg:m-0.75 w-9 h-9 md:w-11 md:h-11 lg:w-13.5 lg:h-13.5 flex flex-col justify-center bg-white dark:bg-zinc-900 rounded-lg shadow dark:shadow-white/10 transition-all">
-      <LabelRow labels={props.labelData.topLabels ?? []} textClass="text-xs md:text-sm lg:text-base" />
-      <LabelRow labels={props.labelData.bottomLabels} textClass="text-sm md:text-base lg:text-lg" />
+    <div className={`m-0.5 lg:m-0.75 ${widthClass} flex flex-col justify-center bg-white dark:bg-zinc-900 rounded-lg shadow dark:shadow-white/10 transition-all`} style={props.style}>
+      {(!(props.hideTopLabels ?? false) || topLabels.length > 0) &&
+        <LabelRow labels={props.labelData.topLabels ?? []} textClass="text-xs md:text-sm lg:text-base" />
+      }
+      <LabelRow labels={bottomLabels} textClass="text-sm md:text-base lg:text-lg" />
     </div>
   )
 }
@@ -60,12 +70,16 @@ function Key(props: KeyProps) {
 interface SpecialKeyProps {
   widthClass?: string;
   label: string;
+  flexibleSized?: boolean;
+  style?: React.CSSProperties;
 }
 
-function SpecialKey(props: SpecialKeyProps) {
+export function SpecialKey(props: SpecialKeyProps) {
+  const widthClass = props.flexibleSized ? '' : ('h-9 md:h-11 lg:h-13.5 ' + (props.widthClass ?? 'w-9 md:w-11 lg:w-13.5'))
+
   return (
-    <div className={`m-0.5 lg:m-0.75 ${props.widthClass ?? 'w-9 md:w-11 lg:w-13.5'} h-9 md:h-11 lg:h-13.5 flex flex-col justify-center bg-white dark:bg-zinc-900 rounded-lg shadow dark:shadow-white/10 transition-all`}>
-      <p className="m-0 leading-tight text-center text-xs md:text-base lg:text-lg select-none">{props.label}</p>
+    <div className={`m-0.5 lg:m-0.75 ${widthClass} flex flex-col justify-center bg-white dark:bg-zinc-900 rounded-lg shadow dark:shadow-white/10 transition-all`} style={props.style}>
+      <p className="m-0 leading-none text-center text-xs md:text-base lg:text-lg select-none">{props.label}</p>
     </div>
   )
 }
