@@ -6,13 +6,12 @@
         fill: #fff;
         stroke: #fff;
         stroke-miterlimit: 10;
-        stroke-width: .75px;
       }
     </style>
   </defs>
   <rect y="4.36" width="32" height="23.27" rx="6.54" ry="6.54"/>
   <g>
-    <path class="cls-1" d="M5.09,10.82h9.52v1.07H5.09v-1.07ZM5.09,21.18v-6.25h9.52v1.07H6.34v4.11h8.27v1.07H5.09Z"/>
-    <path class="cls-1" d="M27.71,11v1.07h-8.27v7.85h8.27v1.07h-9.52v-10h9.52Z"/>
+    <path class="cls-1" d="M4.13,10.38h10.33v1.16H4.13v-1.16ZM4.13,21.62v-6.78h10.33v1.16H5.48v4.45h8.97v1.16H4.13Z"/>
+    <path class="cls-1" d="M28.67,10.58v1.16h-8.97v8.52h8.97v1.16h-10.33v-10.85h10.33Z"/>
   </g>
 </svg>
