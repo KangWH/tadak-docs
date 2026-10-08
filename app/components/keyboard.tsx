@@ -55,14 +55,16 @@ export function Key(props: KeyProps) {
   const topLabels = props.labelData.topLabels ?? []
   const bottomLabels = props.labelData.bottomLabels
 
-  const widthClass = props.flexibleSized ? '' : 'w-9 h-9 md:w-11 md:h-11 lg:w-13.5 lg:h-13.5'
+  const widthClass = props.flexibleSized ? '' : 'w-10 h-10 md:w-12 md:h-12 lg:w-15 lg:h-15'
 
   return (
-    <div className={`m-0.5 lg:m-0.75 ${widthClass} flex flex-col justify-center bg-white dark:bg-zinc-900 rounded-lg shadow dark:shadow-white/10 transition-all`} style={props.style}>
-      {(!(props.hideTopLabels ?? false) || topLabels.length > 0) &&
-        <LabelRow labels={props.labelData.topLabels ?? []} textClass="text-xs md:text-sm lg:text-base" />
-      }
-      <LabelRow labels={bottomLabels} textClass="text-sm md:text-base lg:text-lg" />
+    <div className={`p-0.5 lg:p-0.75 ${widthClass} flex transition-[width_height_padding] duration-500`} style={props.style}>
+      <div className={`flex-1 flex flex-col justify-center bg-white dark:bg-zinc-900 rounded-lg shadow dark:shadow-white/10`}>
+        {(!(props.hideTopLabels ?? false) || topLabels.length > 0) &&
+          <LabelRow labels={props.labelData.topLabels ?? []} textClass="text-xs md:text-sm lg:text-base transition-[font-size,line-height] duration-500" />
+        }
+        <LabelRow labels={bottomLabels} textClass="text-sm md:text-base lg:text-lg transition-[font-size,line-height] duration-500" />
+      </div>
     </div>
   )
 }
@@ -75,11 +77,13 @@ interface SpecialKeyProps {
 }
 
 export function SpecialKey(props: SpecialKeyProps) {
-  const widthClass = props.flexibleSized ? '' : ('h-9 md:h-11 lg:h-13.5 ' + (props.widthClass ?? 'w-9 md:w-11 lg:w-13.5'))
+  const widthClass = props.flexibleSized ? '' : ('h-10 md:h-12 lg:h-15 ' + (props.widthClass ?? 'w-10 md:w-12 lg:w-15'))
 
   return (
-    <div className={`m-0.5 lg:m-0.75 ${widthClass} flex flex-col justify-center bg-white dark:bg-zinc-900 rounded-lg shadow dark:shadow-white/10 transition-all`} style={props.style}>
-      <p className="m-0 leading-none text-center text-xs md:text-base lg:text-lg select-none">{props.label}</p>
+    <div className={`p-0.5 lg:p-0.75 ${widthClass} flex transition-[width_height_padding] duration-500`} style={props.style}>
+      <div className={`flex-1 flex flex-col justify-center bg-white dark:bg-zinc-900 rounded-lg shadow dark:shadow-white/10`}>
+        <p className="m-0 leading-none text-center text-xs md:text-base lg:text-lg select-none transition-[font-size,line-height] duration-500">{props.label}</p>
+      </div>
     </div>
   )
 }
@@ -92,37 +96,37 @@ export default function Keyboard(props: KeyboardProps) {
           {props.labelData[0].map(key => (
             <Key key={key.keyCode} labelData={key} />
           ))}
-          <SpecialKey widthClass="w-14 md:w-17 lg:w-21" label="⌫" />
+          <SpecialKey widthClass="w-15 md:w-18 lg:w-22.5" label="⌫" />
         </div>
         <div className="flex flex-row">
-          <SpecialKey widthClass="w-14 md:w-17 lg:w-21" label="⇥" />
+          <SpecialKey widthClass="w-15 md:w-18 lg:w-22.5" label="⇥" />
           {props.labelData[1].map(key => (
             <Key key={key.keyCode} labelData={key} />
           ))}
         </div>
         <div className="flex flex-row">
-          <SpecialKey widthClass="w-16.5 md:w-20 lg:w-24.75" label="⇪" />
+          <SpecialKey widthClass="w-17.5 md:w-21 lg:w-26.25" label="⇪" />
           {props.labelData[2].map(key => (
             <Key key={key.keyCode} labelData={key} />
           ))}
-          <SpecialKey widthClass="w-16.5 md:w-20 lg:w-24.75" label="↩" />
+          <SpecialKey widthClass="w-17.5 md:w-21 lg:w-26.25" label="↩" />
         </div>
         <div className="flex flex-row">
-          <SpecialKey widthClass="w-21.5 md:w-26 lg:w-32.25" label="⇧" />
+          <SpecialKey widthClass="w-22.5 md:w-27 lg:w-33.75" label="⇧" />
           {props.labelData[3].map(key => (
             <Key key={key.keyCode} labelData={key} />
           ))}
-          <SpecialKey widthClass="w-21.5 md:w-26 lg:w-32.25" label="⇧" />
+          <SpecialKey widthClass="w-22.5 md:w-27 lg:w-33.75" label="⇧" />
         </div>
         <div className="flex flex-row">
           <SpecialKey label="fn" />
           <SpecialKey label="⌃" />
           <SpecialKey label="⌥" />
-          <SpecialKey widthClass="w-11.5 md:w-14 lg:w-17.25" label="⌘" />
-          <SpecialKey widthClass="w-59 md:w-71 lg:w-88.5" label="" />
-          <SpecialKey widthClass="w-14 md:w-17 lg:w-21" label="⌘" />
-          <SpecialKey widthClass="w-11.5 md:w-14 lg:w-17.25" label="⌥" />
-          <SpecialKey widthClass="w-14 md:w-17 lg:w-21" label="⌃" />
+          <SpecialKey widthClass="w-12.5 md:w-15 lg:w-18.75" label="⌘" />
+          <SpecialKey widthClass="w-60 md:w-72 lg:w-90" label="" />
+          <SpecialKey widthClass="w-15 md:w-18 lg:w-22.5" label="⌘" />
+          <SpecialKey widthClass="w-12.5 md:w-15 lg:w-18.75" label="⌥" />
+          <SpecialKey widthClass="w-15 md:w-18 lg:w-22.5" label="⌃" />
         </div>
       </div>
     </div>
