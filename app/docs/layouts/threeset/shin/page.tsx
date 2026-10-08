@@ -1,14 +1,41 @@
 import Keyboard from "@/app/components/keyboard";
 import { chamShinThreeSetDLayout, chamShinThreeSetLayout, shinThreeSet2003Layout, shinThreeSet2015Layout, shinThreeSetHSLayout, shinThreeSetLayout, shinThreeSetMJejuLayout, shinThreeSetMLayout, shinThreeSetP2Layout, shinThreeSetP2OldLayout } from "./threeSetShinLayouts";
+import TableOfContents, { TocConfig } from "@/app/components/table-of-contents";
 
 export default function Layouts() {
+  const toc: TocConfig = {
+    title: "목차",
+    items: [
+      { title: "공통적인 특징", href: "#common-features" },
+      { title: "신세벌식", href: "#shin-three-set" },
+      { title: "수정 신세벌식", href: "#shin-three-set-2003" },
+      { title: "신세벌식 2015", href: "#shin-three-set-2015" },
+      {
+        title: "신세벌식 M", href: "#shin-three-set-m",
+        children: [
+          { title: "신세벌식 M 제주어", href: "#shin-three-set-m-jeju" },
+        ]
+      },
+      {
+        title: "신세벌식 P2", href: "#shin-three-set-p2",
+        children: [
+          { title: "신세벌식 P2 옛한글", href: "#shin-three-set-p2-old" },
+        ]
+      },
+      { title: "신세벌식 HS", href: "#shin-three-set-hs" },
+      { title: "참신세벌식", href: "#cham-shin-three-set" },
+    ]
+  }
+
   return (
     <article>
       <h2>신광조 세벌식</h2>
       <p>신광조가 개발한 신세벌식 배열과, 이를 바탕으로 파생된 여러 신광조 세벌식 배열을 알아봅니다.</p>
       <p>아래 배열 그림에서, 파란색 낱자는 자음(초성·종성 겸용)을, 녹색 낱자는 초성을, 갈색 낱자는 중성을, 빨간색 낱자는 종성을 가리킵니다. 회색 기호는 방점을 나타냅니다. ‘❖’는 음절 조합을 종료하는 동작을 나타냅니다.</p>
 
-      <h3>공통적인 특징</h3>
+      <TableOfContents toc={toc} />
+
+      <h3 id="common-features">공통적인 특징</h3>
       <p>신광조 세벌식 배열들은 대부분 다음의 특징을 가지고 있습니다.</p>
       <ul>
         <li>초성의 배치는 공병우 세벌식 배열과 동일합니다. 다만 초성 ㅋ은 빗금 자리에 있습니다.</li>
@@ -19,33 +46,72 @@ export default function Layouts() {
         <li>종성 ㅆ 외의 겹받침을 한 번에 입력하는 키가 없습니다.</li>
       </ul>
 
-      <h3>신세벌식</h3>
+      <h3 id="shin-three-set">신세벌식</h3>
       <Keyboard labelData={shinThreeSetLayout} />
       <p>1995년에 최초로 발표된 신세벌식 배열입니다. 왼손 키 전체에 갈마들이를 적용하여, 중성을 입력할 차례에는 중성이, 그 외에는 종성이 입력됩니다. 덕분에 세벌식 배열이지만 숫자 행을 사용하지 않고도 모든 한글 낱자를 입력할 수 있습니다. 중성을 단독으로 입력하고자 할 때에는 왼손 키를 <code>shift</code> 키와 함께 누르면 됩니다.</p>
       <p>왼손 전체에 갈마들이가 적용되어 있기에, 중성 ㅘ, ㅙ, ㅚ, ㅝ, ㅞ, ㅟ를 입력하려면 초성을 입력한 후 오른손 자리에 있는 <code>ㅋㅗ</code>, <code>ㅍㅗ</code>, <code>ㅁㅜ</code>, <code>ㅊㅜ</code> 키를 눌러야 합니다.</p>
-      <h3>수정 신세벌식</h3>
+      <h3 id="shin-three-set-2003">수정 신세벌식</h3>
       <Keyboard labelData={shinThreeSet2003Layout} />
       <p>2003년 박경남이 발표한 신세벌식 배열입니다. 신세벌식 원안을 바탕으로 중성과 종성의 배치를 개선하였으며, 윗글쇠의 빈 자리에 문장 부호가 추가되었습니다.</p>
-      <h3>신세벌식 2015 (지원 예정)</h3>
+      <h3 id="shin-three-set-2015">신세벌식 2015 (지원 예정)</h3>
       <Keyboard labelData={shinThreeSet2015Layout} />
       <p>2015년 소인배가 공개한 신세벌식 배열입니다. 다른 신세벌식 배열과는 달리 종성의 배치가 신세벌식 원안과 크게 다르며, 한글 조합 중이 아닐 때 왼손의 키는 중성을 입력합니다.</p>
-      <h3>신세벌식 M</h3>
+
+      <h3 id="shin-three-set-m">신세벌식 M</h3>
       <Keyboard labelData={shinThreeSetMLayout} />
-      <Keyboard labelData={shinThreeSetMJejuLayout} />
-      <p>2015년 메탈리쟈가 공개한 신세벌식 배열입니다. 신세벌식 2015와 마찬가지로, 한글 조합 중이 아닐 때 왼손의 키는 중성을 입력합니다. 현대 한글 전용 배열(위쪽)과 다르게, 제주어 지원 배열(아래쪽)은 초성을 입력한 뒤 <code>ㅁㆍ</code> 키와 <code>ㄹᆢ</code> 키로 각각 아래아와 쌍아래아를 입력할 수 있습니다.</p>
+      <p>2015년 메탈리쟈가 공개한 신세벌식 배열입니다. 신세벌식 2015와 마찬가지로, 한글 조합 중이 아닐 때 왼손의 키는 중성을 입력합니다.</p>
       <p><a href="https://cafe.daum.net/3bulsik/JMKX/77" target="_blank">자세한 정보 ›</a></p>
-      <h3>신세벌식 P2</h3>
+      <h4 id="shin-three-set-m-jeju">신세벌식 M 제주어</h4>
+      <Keyboard labelData={shinThreeSetMJejuLayout} />
+      <p>신세벌식 M의 제주어 버전입니다. 초성을 입력한 뒤 <code>ㅁㆍ</code> 키와 <code>ㄹᆢ</code> 키로 각각 아래아와 쌍아래아를 입력할 수 있습니다.</p>
+      <p><a href="https://cafe.daum.net/3bulsik/JMKX/77" target="_blank">자세한 정보 ›</a></p>
+      
+      <h3 id="shin-three-set-p2">신세벌식 P2</h3>
       <Keyboard labelData={shinThreeSetP2Layout} />
-      <Keyboard labelData={shinThreeSetP2OldLayout} />
-      <p>2018년 팥알이 발표한 신세벌식 배열입니다. 위쪽은 현대 한글 배열(제주어 입력 지원)이며, 아래쪽은 옛한글 배열입니다. 중성 ㅐ, ㅓ, ㅕ의 배치가 다른 배열과 다른 것이 특징입니다.</p>
+      <p>2018년 팥알이 발표한 신세벌식 배열입니다. 중성 ㅐ, ㅓ, ㅕ의 배치가 다른 배열과 다른 것이 특징입니다. 옛한글 배열을 사용하지 않아도 제주어에 사용되는 아래아와 쌍아래아를 입력할 수 있습니다.</p>
       <p>초성&nbsp;<code>ㅇ</code>+<code>ㄱ</code>, <code>ㅇ</code>+<code>ㅈ</code>, <code>ㅇ</code>+<code>ㅂ</code> 키를 눌러 기호 확장 기능을 사용할 수 있습니다.</p>
-      <p>옛한글 배열에서는 갈마들이 배열 특성상 일부 겹낱자를 조합할 때 <code>shift</code> 키를 눌러야 하며, 현대 한글에 사용되지 않는 자음자는 기본 낱자를 조합하여 입력합니다(예: 초성&nbsp;ㆁ = 초성&nbsp;ㄱ+ㅇ).</p>
       <p><a href="https://pat.im/1136" target="_blank">자세한 정보 ›</a></p>
-      <h3>신세벌식 HS (지원 예정)</h3>
+      <h4 id="shin-three-set-p2-old">신세벌식 P2 옛한글</h4>
+      <Keyboard labelData={shinThreeSetP2OldLayout} />
+      <p>신세벌식 P2의 옛한글 입력 지원 버전입니다.</p>
+      <p>갈마들이 배열 특성상 일부 겹낱자를 조합할 때 <code>shift</code> 키를 눌러야 하며, 현대 한글에 사용되지 않는 자음자는 기본 낱자를 조합하여 입력합니다.(예: 초성&nbsp;ㆁ = 초성&nbsp;<code>ㄱ</code>+<code>ㅇ</code>).</p>
+      <ul>
+        <li>
+          <p>현대 한글에 사용되지 않는 기본자</p>
+          <ul>
+            <li>초성 ㅿ = <code>ㄱ</code>+<code>ㅅ</code></li>
+            <li>초성 ㆁ = <code>ㄱ</code>+<code>ㅇ</code></li>
+            <li>초성 ㆆ = <code>ㄱ</code>+<code>ㅎ</code></li>
+            <li>초성 <span style={{ fontFamily: 'var(--font-old-hangul)' }}>ꥼᅠ</span> = <code>ㄱ</code>+<code>ㅎ</code>+<code>ㅎ</code></li>
+            <li>종성 ㅿ = <code>ㅅㅒ</code>+<code>ㅍㅏ</code></li>
+            <li>종성 ㆁ = <code>ㅇㅠ</code>+<code>ㅍㅏ</code></li>
+            <li>종성 ㆆ = <code>ㅎㅣ</code>+<code>ㅍㅏ</code></li>
+          </ul>
+        </li>
+        <li>
+          <p>치두음과 정치음</p>
+          <ul>
+            <li>초성 <span style={{ fontFamily: 'var(--font-old-hangul)' }}>ᄼᅠ</span> = <code>ㅈ</code>+<code>ㅅ</code></li>
+            <li>초성 <span style={{ fontFamily: 'var(--font-old-hangul)' }}>ᄽᅠ</span> = <code>ㅈ</code>+<code>ㅅ</code>+<code>ㅅ</code></li>
+            <li>초성 <span style={{ fontFamily: 'var(--font-old-hangul)' }}>ᄾᅠ</span> = <code>ㅈ</code>+<code>ㅎ</code></li>
+            <li>초성 <span style={{ fontFamily: 'var(--font-old-hangul)' }}>ᄿᅠ</span> = <code>ㅈ</code>+<code>ㅎ</code>+<code>ㅎ</code></li>
+            <li>초성 <span style={{ fontFamily: 'var(--font-old-hangul)' }}>ᅎᅠ</span> = <code>ㅈ</code>+<code>ㄱ</code></li>
+            <li>초성 <span style={{ fontFamily: 'var(--font-old-hangul)' }}>ᅏᅠ</span> = <code>ㅈ</code>+<code>ㄱ</code>+<code>ㄱ</code></li>
+            <li>초성 <span style={{ fontFamily: 'var(--font-old-hangul)' }}>ᅐᅠ</span> = <code>ㄱ</code>+<code>ㅈ</code></li>
+            <li>초성 <span style={{ fontFamily: 'var(--font-old-hangul)' }}>ᅑᅠ</span> = <code>ㄱ</code>+<code>ㅈ</code>+<code>ㅈ</code></li>
+            <li>초성 <span style={{ fontFamily: 'var(--font-old-hangul)' }}>ᅔᅠ</span> = <code>ㅊㅜ</code>+<code>ㄱ</code></li>
+            <li>초성 <span style={{ fontFamily: 'var(--font-old-hangul)' }}>ᅕᅠ</span> = <code>ㅁㅡ</code>+<code>ㅈ</code></li>
+          </ul>
+        </li>
+      </ul>
+      <p><a href="https://pat.im/1136" target="_blank">자세한 정보 ›</a></p>
+      
+      <h3 id="shin-three-set-hs">신세벌식 HS (지원 예정)</h3>
       <Keyboard labelData={shinThreeSetHSLayout} />
       <p>2023년 공개된 신세벌식 배열입니다. 신세벌식 P2 배열을 바탕으로 모음의 배치를 공병우 배열과 동일하게 되돌리고, 한글을 더 편리하게 입력할 수 있도록 개선한 배열입니다. 초성 ㅋ과 ㅌ의 위치가 특징적입니다.</p>
       <p><a href="https://m.blog.naver.com/PostView.naver?blogId=starload5993&logNo=223039276796&navType=by" target="_blank">자세한 정보 ›</a></p>
-      <h3>참신세벌식, 참신세벌식D (지원 예정)</h3>
+      
+      <h3 id="cham-shin-three-set">참신세벌식, 참신세벌식D (지원 예정)</h3>
       <Keyboard labelData={chamShinThreeSetLayout} />
       <Keyboard labelData={chamShinThreeSetDLayout} />
       <p>기존 신세벌식 배열의 낱자 배치를 기반으로 하지 않고, 낱자 배치를 새롭게 설계한 배열입니다. 기존의 신세벌식 배열과 마찬가지로 오른손으로 초성을, 왼손으로 중·종성을 입력합니다. 참신세벌식(위쪽)은 숫자 행에 한글 낱자 키가 배치되지 않았지만, 참신세벌식D(아래쪽)는 왼손 검지의 부담을 줄이기 위하여 종성 3개를 숫자 행에 배치하였습니다.</p>
