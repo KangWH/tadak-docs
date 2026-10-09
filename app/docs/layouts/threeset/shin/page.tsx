@@ -26,7 +26,7 @@ export default function Layouts() {
       {
         title: "참신세벌식", href: "#cham-shin-three-set",
         children: [
-          { title: "참신세벌식 D", href: "#cham-shin-three-set-d" },
+          { title: "참신세벌식D", href: "#cham-shin-three-set-d" },
         ]
       },
     ]
