@@ -1,0 +1,447 @@
+import { VirtualKeyLabel } from "@/app/components/virtualKeyboard";
+
+export const cheonjiin: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㆍ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅡ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}, {label: 'ㅋ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}, {label: 'ㄹ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄷ', labelType: 'consonant'}, {label: 'ㅌ', labelType: 'consonant'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅂ', labelType: 'consonant'}, {label: 'ㅍ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅅ', labelType: 'consonant'}, {label: 'ㅎ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅈ', labelType: 'consonant'}, {label: 'ㅊ', labelType: 'consonant'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '→'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}, {label: 'ㅁ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '.'}, {label: ','}, {label: '?'}, {label: '!'}]}}},
+  ],
+];
+
+export const cheonjiinPlus: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㆍ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅡ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}]}}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅋ', labelType: 'consonant'}]}}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}]}}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄹ', labelType: 'consonant'}]}}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄷ', labelType: 'consonant'}]}}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅌ', labelType: 'consonant'}]}}, width: 0.5},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅂ', labelType: 'consonant'}]}}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅍ', labelType: 'consonant'}]}}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅅ', labelType: 'consonant'}]}}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅎ', labelType: 'consonant'}]}}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅈ', labelType: 'consonant'}]}}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅊ', labelType: 'consonant'}]}}, width: 0.5},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '→'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}]}}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅁ', labelType: 'consonant'}]}}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '.'}, {label: ','}]}}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '?'}, {label: '!'}]}}, width: 0.5},
+  ],
+];
+
+export const vega: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}, {label: 'ㅋ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}, {label: 'ㅡ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅏ', labelType: 'vowel'}, {label: 'ㅑ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄷ', labelType: 'consonant'}, {label: 'ㅌ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}, {label: 'ㄹ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅓ', labelType: 'vowel'}, {label: 'ㅕ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅁ', labelType: 'consonant'}, {label: 'ㅅ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅂ', labelType: 'consonant'}, {label: 'ㅍ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅗ', labelType: 'vowel'}, {label: 'ㅛ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅈ', labelType: 'consonant'}, {label: 'ㅊ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}, {label: 'ㅎ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅗ', labelType: 'vowel'}, {label: 'ㅛ', labelType: 'vowel'}]}}},
+  ],
+];
+
+export const naratgeul: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅏ', labelType: 'vowel'}, {label: 'ㅓ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄹ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅁ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅗ', labelType: 'vowel'}, {label: 'ㅜ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅅ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅡ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '획 추가'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '쌍자음'}]}}},
+  ],
+];
+
+export const motorola: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}, {label: 'ㅋ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}, {label: 'ㅁ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅏ', labelType: 'vowel'}, {label: 'ㅓ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄷ', labelType: 'consonant'}, {label: 'ㅌ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄹ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅗ', labelType: 'vowel'}, {label: 'ㅜ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅂ', labelType: 'consonant'}, {label: 'ㅍ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅅ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}, {label: 'ㅡ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅈ', labelType: 'consonant'}, {label: 'ㅊ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}, {label: 'ㅎ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '한'}]}}},
+  ],
+];
+
+export const twoSetSimple: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅂ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅈ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄷ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅅ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅗ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅐ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅔ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅁ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄹ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅎ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅓ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅏ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {width: 0.75, content: {kind: 'empty'}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅋ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅌ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅊ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅍ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅜ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅡ', labelType: 'vowel'}]}}},
+    {width: 0.25, content: {kind: 'empty'}},
+    {content: {kind: 'special', labelData: 'delete'}},
+  ],
+]
+export const twoSetSimplePad9: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅂ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅈ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄷ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅅ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅗ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅐ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅔ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'delete'}, width: 1.25},
+  ],
+  [
+    {content: {kind: 'empty'}, width: 0.25},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅁ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄹ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅎ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅓ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅏ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'return'}},
+  ],
+  [
+    {content: {kind: 'special', labelData: 'shift'}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅋ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅌ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅊ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅍ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅜ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅡ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: ','}], topLabels: [{label: '!'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '.'}], topLabels: [{label: '?'}]}}},
+    {content: {kind: 'empty'}, width: 0.25},
+  ],
+]
+export const twoSetSimplePad11: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'special', labelData: 'tab'}, width: 1.25},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅂ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅈ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄷ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅅ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅗ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅐ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅔ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'delete'}, width: 2},
+  ],
+  [
+    {content: {kind: 'special', labelData: 'caps'}, width: 1.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅁ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄹ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅎ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅓ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅏ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'return'}, width: 1.75},
+  ],
+  [
+    {content: {kind: 'special', labelData: 'shift'}, width: 2},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅋ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅌ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅊ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅍ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅜ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅡ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: ','}], topLabels: [{label: '!'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '.'}], topLabels: [{label: '?'}]}}},
+    {content: {kind: 'special', labelData: 'shift'}, width: 1.25},
+  ],
+]
+
+export const muiSimple: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅈ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄷ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅅ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅐ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅔ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'delete'}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅁ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄹ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅓ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅏ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅋ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅌ', labelType: 'consonant'}, {label: 'ㅊ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅂ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅎ', labelType: 'consonant'}, {label: 'ㅍ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅜ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅗ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅡ', labelType: 'vowel'}]}}},
+  ],
+]
+
+export const muiSimplePad9: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅈ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄷ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅅ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅐ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅔ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: ','}], topLabels: [{label: '!'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '.'}], topLabels: [{label: '?'}]}}},
+    {content: {kind: 'special', labelData: 'delete'}},
+  ],
+  [
+    {content: {kind: 'empty'}, width: 0.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅁ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄹ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅓ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅏ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'return'}, width: 1.5},
+  ],
+  [
+    {content: {kind: 'special', labelData: 'shift'}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅋ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅌ', labelType: 'consonant'}, {label: 'ㅊ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅂ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅎ', labelType: 'consonant'}, {label: 'ㅍ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅜ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅗ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅡ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'shift'}},
+  ],
+]
+
+export const muiSimplePad11: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'special', labelData: 'tab'}, width: 1.25},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅈ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄷ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅅ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅐ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅔ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: ','}], topLabels: [{label: '!'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '.'}], topLabels: [{label: '?'}]}}},
+    {content: {kind: 'special', labelData: 'delete'}, width: 1.25},
+  ],
+  [
+    {content: {kind: 'special', labelData: 'caps'}, width: 1.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅁ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄹ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅓ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅏ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'return'}, width: 2},
+  ],
+  [
+    {content: {kind: 'special', labelData: 'shift'}, width: 2},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅋ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅌ', labelType: 'consonant'}, {label: 'ㅊ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅂ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅎ', labelType: 'consonant'}, {label: 'ㅍ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅜ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅗ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅡ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'shift'}, width: 1.5},
+  ],
+]
+
+export const dujulESimple: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅂ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅈ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄷ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅎ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅅ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅗ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅓ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅜ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅁ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄹ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅡ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅏ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}]}}},
+  ],
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅋ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅌ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅊ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅆ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅍ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅐ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅔ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'delete'}},
+  ],
+]
+
+export const dujulESimplePad9: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅂ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅈ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄷ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅎ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅅ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅗ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅓ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅜ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'delete'}, width: 1.75},
+  ],
+  [
+    {content: {kind: 'empty'}, width: 0.25},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅁ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄹ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅡ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅏ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'return'}, width: 1.5},
+  ],
+  [
+    {content: {kind: 'special', labelData: 'shift'}, width: 0.75},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅋ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅌ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅊ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅆ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅍ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅐ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅔ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: ','}], topLabels: [{label: '!'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '.'}], topLabels: [{label: '?'}]}}},
+  ],
+]
+
+export const dujulESimplePad11: VirtualKeyLabel[][] = [
+  [
+    {content: {kind: 'special', labelData: 'tab'}, width: 1.25},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅂ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅈ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄷ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅎ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅅ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅗ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅓ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅜ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'delete'}, width: 2},
+  ],
+  [
+    {content: {kind: 'special', labelData: 'caps'}, width: 1.5},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅁ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄴ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅇ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄱ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㄹ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅡ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅏ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅣ', labelType: 'vowel'}]}}},
+    {content: {kind: 'special', labelData: 'return'}, width: 1.75},
+  ],
+  [
+    {content: {kind: 'special', labelData: 'shift'}, width: 2},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅋ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅌ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅊ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅆ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅍ', labelType: 'consonant'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅐ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: 'ㅔ', labelType: 'vowel'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: ','}], topLabels: [{label: '!'}]}}},
+    {content: {kind: 'label', labelData: {bottomLabels: [{label: '.'}], topLabels: [{label: '?'}]}}},
+    {content: {kind: 'empty'}, width: 0.25},
+  ],
+]
