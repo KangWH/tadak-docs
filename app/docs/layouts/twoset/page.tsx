@@ -1,6 +1,7 @@
 import Keyboard from "@/app/components/keyboard";
 import { twoSetLayout, twoSetOldLayout, twoSetNorthLayout, dujulELayout, dugyeobEExtendedLayout, dugyeobELayout, dujulEExtendedLayout } from "./twoSetLayouts";
 import TableOfContents, { type TocConfig } from "@/app/components/table-of-contents";
+import Link from "next/link";
 
 const toc: TocConfig = {
   title: "목차",
@@ -29,6 +30,7 @@ export default function Layouts() {
     <article>
       <h2>두벌식</h2>
       <p><strong>두벌식</strong> 배열은 낱자 키가 자음 한 벌과 모음 한 벌, 이렇게 두 벌로 구성되어 있는 배열을 뜻합니다. 자음 키 한 벌이 초성과 종성을 입력하는 데 모두 사용되기 때문에, 배열을 익히기 쉽고 적은 수의 키로도 한국어를 입력할 수 있습니다.</p>
+      <p>모바일 기기에서는 물리적인 한계나 화면의 크기 때문에 다양한 형태의 두벌식 배열이 만들어졌습니다. 이에 대한 자세한 내용은 <Link href="./twoset/mobile">모바일용 두벌식</Link> 문서를 참조하십시오.</p>
       <p>아래 배열 그림에서, 파란색 낱자는 자음(초성·종성 겸용)을, 녹색 낱자는 초성을, 갈색 낱자는 중성을, 빨간색 낱자는 종성을 가리킵니다. 회색 기호는 방점을 나타냅니다. ‘❖’는 음절 조합을 종료하는 동작을 나타냅니다.</p>
       <TableOfContents toc={toc} />
       <h3 id="common-features">공통적인 특징</h3>
