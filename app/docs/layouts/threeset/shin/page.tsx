@@ -23,7 +23,12 @@ export default function Layouts() {
         ]
       },
       { title: "신세벌식 HS", href: "#shin-three-set-hs" },
-      { title: "참신세벌식", href: "#cham-shin-three-set" },
+      {
+        title: "참신세벌식", href: "#cham-shin-three-set",
+        children: [
+          { title: "참신세벌식 D", href: "#cham-shin-three-set-d" },
+        ]
+      },
     ]
   }
 
@@ -111,26 +116,55 @@ export default function Layouts() {
       <p>2023년 공개된 신세벌식 배열입니다. 신세벌식 P2 배열을 바탕으로 모음의 배치를 공병우 배열과 동일하게 되돌리고, 한글을 더 편리하게 입력할 수 있도록 개선한 배열입니다. 초성 ㅋ과 ㅌ의 위치가 특징적입니다.</p>
       <p><a href="https://m.blog.naver.com/PostView.naver?blogId=starload5993&logNo=223039276796&navType=by" target="_blank">자세한 정보 ›</a></p>
       
-      <h3 id="cham-shin-three-set">참신세벌식, 참신세벌식D (지원 예정)</h3>
+      <h3 id="cham-shin-three-set">참신세벌식 (지원 예정)</h3>
       <Keyboard labelData={chamShinThreeSetLayout} />
-      <Keyboard labelData={chamShinThreeSetDLayout} />
       <p>기존 신세벌식 배열의 낱자 배치를 기반으로 하지 않고, 낱자 배치를 새롭게 설계한 배열입니다. 기존의 신세벌식 배열과 마찬가지로 오른손으로 초성을, 왼손으로 중·종성을 입력합니다. 참신세벌식(위쪽)은 숫자 행에 한글 낱자 키가 배치되지 않았지만, 참신세벌식D(아래쪽)는 왼손 검지의 부담을 줄이기 위하여 종성 3개를 숫자 행에 배치하였습니다.</p>
       <ul>
-        <li>쌍자음 초성은 <code>ㅇ</code>을 입력한 뒤 홑자음을 조합하거나, 홑자음 키를 연타하여 입력합니다.</li>
-        <li>참신세벌식 배열에서 종성 ㅋ을 입력해야 하는 경우, 종성&nbsp;<code>ㅋ</code> 키 대신 종성 <code>ㄱ</code>+<code>ㅁ</code> 조합을 사용하는 것을 권장합니다.</li>
         <li>
-          <p>일부 겹받침은 다음 조합으로 입력하는 것이 더 효율적입니다.</p>
+          <p>초성 ㄲ, ㄸ, ㅃ, ㅆ, ㅉ은 홑자음 키를 연타하여 입력할 수 있으나, 다음 조합을 사용하는 것을 권장합니다.</p>
           <ul>
-            <li>ㄳ = <code>ㄱ</code>+<code>ㅆ</code></li>
-            <li>ㄵ = <code>ㄱ</code>+<code>ㄴ</code></li>
-            <li>ㄶ = <code>ㅇ</code>+<code>ㄴ</code></li>
-            <li>ㄼ = <code>ㄴ</code>+<code>ㅁ</code></li>
-            <li>ㄽ = <code>ㄹ</code>+<code>ㅆ</code></li>
-            <li>ㄿ = <code>ㅇ</code>+<code>ㅁ</code></li>
-            <li>ㅀ = <code>ㅇ</code>+<code>ㄹ</code></li>
+            <li>ㄲ = <code>ㅇ</code>+<code>ㄱ</code></li>
+            <li>ㄸ = <code>ㅇ</code>+<code>ㄷ</code></li>
+            <li>ㅃ = <code>ㅇ</code>+<code>ㅂ</code></li>
+            <li>ㅆ = <code>ㅇ</code>+<code>ㅅ</code></li>
+            <li>ㅉ = <code>ㅈ</code>+<code>ㅇ</code></li>
           </ul>
         </li>
-        <li>현재 상태에서 갈마들이가 적용된 키의 다른 문자를 입력해야 하는 경우(예: 초성 ㄱ·ㄷ·ㄹ·ㅂ·ㅅ·ㅈ·ㅋ를 반복 입력하는 경우, 참신세벌식D에서 종성 없는 음절을 입력한 뒤 숫자 2, 3, 4를 입력하는 경우), <code>❖</code>&nbsp;키로 현재 음절의 조합을 중단한 후 입력할 수 있습니다.</li>
+        <li>중성 ㅑ를 단독으로 입력하려면 <code>ㅣㅇ</code>+<code>ㅏㅋ</code> 조합을 사용합니다. 중성 ㅘ·ㅙ·ㅚ·ㅝ·ㅞ·ㅟ를 단독으로 입력할 때의 ㅗ와 ㅜ는 왼손 쪽에 있는 <code>ㅗㅍ</code>·<code>ㅜㅌ</code> 키를 사용합니다.</li>
+        <li><code>ㆍ</code>&nbsp;키로 아래아를 입력할 수 있습니다.</li>
+        <li>
+          <p>일부 종성은 다음 조합으로 입력하는 것이 더 효율적입니다.</p>
+          <ul>
+            <li>ㄳ = <code>ㅔㄱ</code>+<code>ㅠㅆ</code></li>
+            <li>ㄵ = <code>ㅔㄱ</code>+<code>ㅐㄴ</code></li>
+            <li>ㄶ = <code>ㅣㅇ</code>+<code>ㅐㄴ</code></li>
+            <li>ㄼ = <code>ㅐㄴ</code>+<code>ㅛㅁ</code></li>
+            <li>ㄽ = <code>ㅢㄹ</code>+<code>ㅠㅆ</code></li>
+            <li>ㄿ = <code>ㅣㅇ</code>+<code>ㅛㅁ</code></li>
+            <li>ㅀ = <code>ㅣㅇ</code>+<code>ㅢㄹ</code></li>
+            <li>ㅋ = <code>ㅔㄱ</code>+<code>ㅛㅁ</code></li>
+          </ul>
+        </li>
+        <li>종성 ㄺ과 ㅄ은 역순으로 입력하는 것을 권장합니다.</li>
+        <li>
+          <p><code>❖</code>&nbsp;키로 현재 음절의 조합을 중단할 수 있습니다. 다음과 같은 상황에서 유용합니다.</p>
+          <ul>
+            <li>초성 ㄱ·ㄷ·ㄹ·ㅂ·ㅅ·ㅈ·ㅋ를 반복 입력하는 경우</li>
+            <li>초성 ㅇ 다음에 초성 ㄱ·ㄷ·ㅂ·ㅅ을 입력하는 경우, 초성 ㅈ 다음에 초성 ㅇ을 입력하는 경우</li>
+            <li>한글 음절 다음에 바로 중성을 단독으로 입력하는 경우</li>
+            <li>초성만 입력한 상태에서 마침표를 입력하는 경우</li>
+          </ul>
+        </li>
+      </ul>
+      <p><a href="https://cafe.daum.net/3bulsik/JMKX/147" target="_blank">자세한 정보 ›</a></p>
+      <h4 id="cham-shin-three-set-d">참신세벌식D (지원 예정)</h4>
+      <Keyboard labelData={chamShinThreeSetDLayout} />
+      <p>참신세벌식 배열에서 왼손 검지의 연타를 막기 위해, 종성 ㄷ·ㅈ·ㅍ을 숫자 행으로 이동한 배열입니다.</p>
+      <ul>
+        <li>종성 ㄷ·ㅈ·ㅍ은 중성을 입력한 상태에서 각각 <code>3ㄷ</code>, <code>2ㅈ</code>, <code>4ㅍ</code>&nbsp;키를 눌러 입력합니다.</li>
+        <li>종성 ㄺ과 ㅄ뿐 아니라, ㄿ도 역순으로 입력하는 것을 권장합니다.</li>
+        <li>종성 없는 한글 음절을 입력한 뒤 숫자 2·3·4를 바로 입력하려면 먼저 <code>❖</code>&nbsp;키를 눌러 현재 조합을 중단해야 합니다.</li>
+        <li>종성 ㅋ은 기본 배열처럼 <code>ㅔㄱ</code>+<code>ㅛㅁ</code> 조합으로 입력할 수도 있으나, <code>ㅏㅋ</code>&nbsp;갈마들이 키를 사용하는 것이 더 편리합니다.</li>
       </ul>
       <p><a href="https://cafe.daum.net/3bulsik/JMKX/147" target="_blank">자세한 정보 ›</a></p>
     </article>
